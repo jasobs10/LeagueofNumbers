@@ -23,7 +23,7 @@ class Data {
       APIUTIL.fetchChallengerMatchesJson().then((r) => {
         console.log(r.length)
         this.challengerList = r;
-        const draw = new Draw(this.challengerPlayers.entries, this.challengerList);
+        const draw = new Draw(this.challengerList);
         draw.render();
       });
     });
