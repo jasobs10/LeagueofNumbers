@@ -1,5 +1,5 @@
-{
-  "65009177": {
+[
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 986,
@@ -37,9 +37,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Alex ïch"
+    "name": "Alex ïch",
+    "sum_id": "65009177"
   },
-  "24017482": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 270,
@@ -77,9 +78,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Huge Rooster"
+    "name": "Huge Rooster",
+    "sum_id": "24017482"
   },
-  "54886348": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 421,
@@ -117,9 +119,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "t d"
+    "name": "t d",
+    "sum_id": "54886348"
   },
-  "89197": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 382,
@@ -157,9 +160,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Diamond 1 Player"
+    "name": "Diamond 1 Player",
+    "sum_id": "89197"
   },
-  "22205540": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 342,
@@ -197,35 +201,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "FlREFLY"
+    "name": "FlREFLY",
+    "sum_id": "22205540"
   },
-  "68603405": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 438,
+      "totalSessionsPlayed": 439,
       "totalSessionsLost": 193,
-      "totalSessionsWon": 245,
-      "totalChampionKills": 3482,
-      "killingSpree": 1610,
-      "totalDamageDealt": 47564458,
-      "totalDamageTaken": 8631251,
+      "totalSessionsWon": 246,
+      "totalChampionKills": 3485,
+      "killingSpree": 1613,
+      "totalDamageDealt": 47651382,
+      "totalDamageTaken": 8663750,
       "mostChampionKillsPerSession": 28,
-      "totalMinionKills": 64078,
+      "totalMinionKills": 64227,
       "totalDoubleKills": 316,
       "totalTripleKills": 38,
       "totalQuadraKills": 5,
       "totalPentaKills": 1,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2508,
-      "totalGoldEarned": 5140492,
+      "totalDeathsPerSession": 2512,
+      "totalGoldEarned": 5151735,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 421,
-      "totalPhysicalDamageDealt": 41895698,
-      "totalMagicDamageDealt": 4777780,
-      "totalNeutralMinionsKilled": 3353,
+      "totalTurretsKilled": 422,
+      "totalPhysicalDamageDealt": 41911850,
+      "totalMagicDamageDealt": 4848312,
+      "totalNeutralMinionsKilled": 3354,
       "totalFirstBlood": 0,
-      "totalAssists": 3348,
-      "totalHeal": 940885,
+      "totalAssists": 3370,
+      "totalHeal": 952979,
       "maxLargestKillingSpree": 15,
       "maxLargestCriticalStrike": 1584,
       "maxChampionsKilled": 28,
@@ -237,9 +242,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Keegun"
+    "name": "Keegun",
+    "sum_id": "68603405"
   },
-  "44841787": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 852,
@@ -277,35 +283,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "MooseHater"
+    "name": "MooseHater",
+    "sum_id": "44841787"
   },
-  "21014987": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 317,
-      "totalSessionsLost": 141,
+      "totalSessionsPlayed": 318,
+      "totalSessionsLost": 142,
       "totalSessionsWon": 176,
-      "totalChampionKills": 1171,
+      "totalChampionKills": 1173,
       "killingSpree": 568,
-      "totalDamageDealt": 22349912,
-      "totalDamageTaken": 4958269,
+      "totalDamageDealt": 22384723,
+      "totalDamageTaken": 4970372,
       "mostChampionKillsPerSession": 15,
-      "totalMinionKills": 25166,
+      "totalMinionKills": 25181,
       "totalDoubleKills": 62,
       "totalTripleKills": 4,
       "totalQuadraKills": 1,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1556,
-      "totalGoldEarned": 3323417,
+      "totalDeathsPerSession": 1564,
+      "totalGoldEarned": 3330505,
       "mostSpellsCast": 0,
       "totalTurretsKilled": 168,
-      "totalPhysicalDamageDealt": 2406310,
-      "totalMagicDamageDealt": 17719727,
-      "totalNeutralMinionsKilled": 1461,
+      "totalPhysicalDamageDealt": 2409750,
+      "totalMagicDamageDealt": 17743872,
+      "totalNeutralMinionsKilled": 1462,
       "totalFirstBlood": 0,
-      "totalAssists": 3525,
-      "totalHeal": 832213,
+      "totalAssists": 3533,
+      "totalHeal": 832462,
       "maxLargestKillingSpree": 12,
       "maxLargestCriticalStrike": 144,
       "maxChampionsKilled": 15,
@@ -317,9 +324,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "lron Pyrite"
+    "name": "lron Pyrite",
+    "sum_id": "21014987"
   },
-  "22717034": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 203,
@@ -357,9 +365,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "N For New York"
+    "name": "N For New York",
+    "sum_id": "22717034"
   },
-  "26114733": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 382,
@@ -397,249 +406,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Chimonaa1"
+    "name": "Chimonaa1",
+    "sum_id": "26114733"
   },
-  "20403437": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 180,
-      "totalSessionsLost": 49,
-      "totalSessionsWon": 131,
-      "totalChampionKills": 1503,
-      "killingSpree": 706,
-      "totalDamageDealt": 26694953,
-      "totalDamageTaken": 4883810,
-      "mostChampionKillsPerSession": 27,
-      "totalMinionKills": 15154,
-      "totalDoubleKills": 174,
-      "totalTripleKills": 27,
-      "totalQuadraKills": 3,
-      "totalPentaKills": 1,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 975,
-      "totalGoldEarned": 2245125,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 196,
-      "totalPhysicalDamageDealt": 18870025,
-      "totalMagicDamageDealt": 6522265,
-      "totalNeutralMinionsKilled": 11847,
-      "totalFirstBlood": 0,
-      "totalAssists": 1547,
-      "totalHeal": 1392209,
-      "maxLargestKillingSpree": 13,
-      "maxLargestCriticalStrike": 1900,
-      "maxChampionsKilled": 27,
-      "maxNumDeaths": 18,
-      "maxTimePlayed": 2932,
-      "maxTimeSpentLiving": 1815,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "wiggily1"
-  },
-  "23083311": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 375,
-      "totalSessionsLost": 146,
-      "totalSessionsWon": 229,
-      "totalChampionKills": 2796,
-      "killingSpree": 1319,
-      "totalDamageDealt": 60482368,
-      "totalDamageTaken": 8528123,
-      "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 64056,
-      "totalDoubleKills": 344,
-      "totalTripleKills": 55,
-      "totalQuadraKills": 5,
-      "totalPentaKills": 1,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2236,
-      "totalGoldEarned": 4748684,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 501,
-      "totalPhysicalDamageDealt": 21141644,
-      "totalMagicDamageDealt": 37709367,
-      "totalNeutralMinionsKilled": 10414,
-      "totalFirstBlood": 0,
-      "totalAssists": 2885,
-      "totalHeal": 1827895,
-      "maxLargestKillingSpree": 12,
-      "maxLargestCriticalStrike": 1915,
-      "maxChampionsKilled": 22,
-      "maxNumDeaths": 16,
-      "maxTimePlayed": 3108,
-      "maxTimeSpentLiving": 1387,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Yeonbee"
-  },
-  "64834040": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 465,
-      "totalSessionsLost": 214,
-      "totalSessionsWon": 251,
-      "totalChampionKills": 1253,
-      "killingSpree": 716,
-      "totalDamageDealt": 50975884,
-      "totalDamageTaken": 7483163,
-      "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 21845,
-      "totalDoubleKills": 61,
-      "totalTripleKills": 5,
-      "totalQuadraKills": 1,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1525,
-      "totalGoldEarned": 4496727,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 240,
-      "totalPhysicalDamageDealt": 10752077,
-      "totalMagicDamageDealt": 11770211,
-      "totalNeutralMinionsKilled": 11251,
-      "totalFirstBlood": 0,
-      "totalAssists": 5198,
-      "totalHeal": 2525210,
-      "maxLargestKillingSpree": 12,
-      "maxLargestCriticalStrike": 2396,
-      "maxChampionsKilled": 22,
-      "maxNumDeaths": 9,
-      "maxTimePlayed": 3769,
-      "maxTimeSpentLiving": 2400,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "dufTlalgkqtlek"
-  },
-  "19839806": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 740,
-      "totalSessionsLost": 347,
-      "totalSessionsWon": 393,
-      "totalChampionKills": 5765,
-      "killingSpree": 2879,
-      "totalDamageDealt": 111385472,
-      "totalDamageTaken": 20853436,
-      "mostChampionKillsPerSession": 25,
-      "totalMinionKills": 40739,
-      "totalDoubleKills": 491,
-      "totalTripleKills": 38,
-      "totalQuadraKills": 10,
-      "totalPentaKills": 5,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 3839,
-      "totalGoldEarned": 8866693,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 489,
-      "totalPhysicalDamageDealt": 69575941,
-      "totalMagicDamageDealt": 35998046,
-      "totalNeutralMinionsKilled": 70865,
-      "totalFirstBlood": 0,
-      "totalAssists": 5867,
-      "totalHeal": 6482976,
-      "maxLargestKillingSpree": 19,
-      "maxLargestCriticalStrike": 1823,
-      "maxChampionsKilled": 25,
-      "maxNumDeaths": 15,
-      "maxTimePlayed": 3555,
-      "maxTimeSpentLiving": 1576,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "blaberfish2"
-  },
-  "71899217": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 287,
-      "totalSessionsLost": 125,
-      "totalSessionsWon": 162,
-      "totalChampionKills": 2011,
-      "killingSpree": 990,
-      "totalDamageDealt": 43385028,
-      "totalDamageTaken": 6016727,
-      "mostChampionKillsPerSession": 21,
-      "totalMinionKills": 57208,
-      "totalDoubleKills": 168,
-      "totalTripleKills": 21,
-      "totalQuadraKills": 7,
-      "totalPentaKills": 1,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1348,
-      "totalGoldEarned": 3668989,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 289,
-      "totalPhysicalDamageDealt": 10546241,
-      "totalMagicDamageDealt": 31560802,
-      "totalNeutralMinionsKilled": 5247,
-      "totalFirstBlood": 0,
-      "totalAssists": 2008,
-      "totalHeal": 1408890,
-      "maxLargestKillingSpree": 13,
-      "maxLargestCriticalStrike": 1765,
-      "maxChampionsKilled": 21,
-      "maxNumDeaths": 13,
-      "maxTimePlayed": 3135,
-      "maxTimeSpentLiving": 1487,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Anivia Kid"
-  },
-  "56901374": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 389,
-      "totalSessionsLost": 172,
-      "totalSessionsWon": 217,
-      "totalChampionKills": 2125,
-      "killingSpree": 1073,
-      "totalDamageDealt": 54127080,
-      "totalDamageTaken": 11728559,
-      "mostChampionKillsPerSession": 18,
-      "totalMinionKills": 37251,
-      "totalDoubleKills": 163,
-      "totalTripleKills": 20,
-      "totalQuadraKills": 1,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2052,
-      "totalGoldEarned": 4490548,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 331,
-      "totalPhysicalDamageDealt": 26766266,
-      "totalMagicDamageDealt": 24045837,
-      "totalNeutralMinionsKilled": 23007,
-      "totalFirstBlood": 0,
-      "totalAssists": 3613,
-      "totalHeal": 4961484,
-      "maxLargestKillingSpree": 13,
-      "maxLargestCriticalStrike": 2396,
-      "maxChampionsKilled": 18,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 2902,
-      "maxTimeSpentLiving": 1775,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "YIlIlIlIlI"
-  },
-  "32653422": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 474,
@@ -677,9 +447,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Win or Learn"
+    "name": "Win or Learn",
+    "sum_id": "32653422"
   },
-  "73459350": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 253,
@@ -717,9 +488,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Derek GP"
+    "name": "Derek GP",
+    "sum_id": "73459350"
   },
-  "20112175": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 828,
@@ -757,9 +529,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Rohammers"
+    "name": "Rohammers",
+    "sum_id": "20112175"
   },
-  "20426711": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 208,
@@ -797,235 +570,282 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "woxiangwanAD"
+    "name": "woxiangwanAD",
+    "sum_id": "20426711"
   },
-  "129380": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 228,
-      "totalSessionsLost": 96,
-      "totalSessionsWon": 132,
-      "totalChampionKills": 1052,
-      "killingSpree": 588,
-      "totalDamageDealt": 32594890,
-      "totalDamageTaken": 5226454,
-      "mostChampionKillsPerSession": 19,
-      "totalMinionKills": 43421,
-      "totalDoubleKills": 79,
-      "totalTripleKills": 10,
-      "totalQuadraKills": 1,
+      "totalSessionsPlayed": 596,
+      "totalSessionsLost": 281,
+      "totalSessionsWon": 315,
+      "totalChampionKills": 3962,
+      "killingSpree": 2105,
+      "totalDamageDealt": 87452962,
+      "totalDamageTaken": 12197557,
+      "mostChampionKillsPerSession": 24,
+      "totalMinionKills": 108437,
+      "totalDoubleKills": 419,
+      "totalTripleKills": 59,
+      "totalQuadraKills": 5,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1012,
-      "totalGoldEarned": 2754075,
+      "totalDeathsPerSession": 2892,
+      "totalGoldEarned": 7250626,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 314,
-      "totalPhysicalDamageDealt": 20561859,
-      "totalMagicDamageDealt": 11402391,
-      "totalNeutralMinionsKilled": 3855,
+      "totalTurretsKilled": 497,
+      "totalPhysicalDamageDealt": 29852160,
+      "totalMagicDamageDealt": 54704163,
+      "totalNeutralMinionsKilled": 11593,
       "totalFirstBlood": 0,
-      "totalAssists": 1603,
-      "totalHeal": 1330885,
-      "maxLargestKillingSpree": 13,
-      "maxLargestCriticalStrike": 1457,
-      "maxChampionsKilled": 19,
+      "totalAssists": 4119,
+      "totalHeal": 2363701,
+      "maxLargestKillingSpree": 17,
+      "maxLargestCriticalStrike": 2455,
+      "maxChampionsKilled": 24,
       "maxNumDeaths": 12,
-      "maxTimePlayed": 3267,
-      "maxTimeSpentLiving": 1547,
+      "maxTimePlayed": 3440,
+      "maxTimeSpentLiving": 2500,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Steel I"
+    "name": "Piggy Kitten",
+    "sum_id": "30266347"
   },
-  "47992267": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 363,
-      "totalSessionsLost": 163,
-      "totalSessionsWon": 200,
-      "totalChampionKills": 2039,
-      "killingSpree": 961,
-      "totalDamageDealt": 53860266,
-      "totalDamageTaken": 7471544,
-      "mostChampionKillsPerSession": 25,
-      "totalMinionKills": 69174,
-      "totalDoubleKills": 214,
-      "totalTripleKills": 32,
+      "totalSessionsPlayed": 250,
+      "totalSessionsLost": 106,
+      "totalSessionsWon": 144,
+      "totalChampionKills": 1443,
+      "killingSpree": 726,
+      "totalDamageDealt": 33101634,
+      "totalDamageTaken": 5869358,
+      "mostChampionKillsPerSession": 22,
+      "totalMinionKills": 43477,
+      "totalDoubleKills": 128,
+      "totalTripleKills": 17,
+      "totalQuadraKills": 2,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 1261,
+      "totalGoldEarned": 2973567,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 298,
+      "totalPhysicalDamageDealt": 19318348,
+      "totalMagicDamageDealt": 13072185,
+      "totalNeutralMinionsKilled": 4186,
+      "totalFirstBlood": 0,
+      "totalAssists": 1877,
+      "totalHeal": 1184531,
+      "maxLargestKillingSpree": 10,
+      "maxLargestCriticalStrike": 1261,
+      "maxChampionsKilled": 22,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 3488,
+      "maxTimeSpentLiving": 1599,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "never lucky help",
+    "sum_id": "19203113"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 336,
+      "totalSessionsLost": 145,
+      "totalSessionsWon": 191,
+      "totalChampionKills": 1098,
+      "killingSpree": 531,
+      "totalDamageDealt": 21454675,
+      "totalDamageTaken": 5851900,
+      "mostChampionKillsPerSession": 23,
+      "totalMinionKills": 23532,
+      "totalDoubleKills": 70,
+      "totalTripleKills": 7,
       "totalQuadraKills": 0,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2064,
-      "totalGoldEarned": 4283235,
+      "totalDeathsPerSession": 1600,
+      "totalGoldEarned": 3352972,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 428,
-      "totalPhysicalDamageDealt": 46086553,
-      "totalMagicDamageDealt": 6973062,
-      "totalNeutralMinionsKilled": 4827,
+      "totalTurretsKilled": 210,
+      "totalPhysicalDamageDealt": 6643273,
+      "totalMagicDamageDealt": 14139493,
+      "totalNeutralMinionsKilled": 2321,
       "totalFirstBlood": 0,
-      "totalAssists": 1987,
-      "totalHeal": 551782,
-      "maxLargestKillingSpree": 15,
-      "maxLargestCriticalStrike": 1920,
-      "maxChampionsKilled": 25,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 3176,
-      "maxTimeSpentLiving": 1827,
+      "totalAssists": 3820,
+      "totalHeal": 1690986,
+      "maxLargestKillingSpree": 10,
+      "maxLargestCriticalStrike": 1138,
+      "maxChampionsKilled": 23,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3463,
+      "maxTimeSpentLiving": 1638,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "RegisZZ"
+    "name": "5tunt",
+    "sum_id": "68401488"
   },
-  "26600205": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 249,
-      "totalSessionsLost": 104,
-      "totalSessionsWon": 145,
-      "totalChampionKills": 1894,
-      "killingSpree": 948,
-      "totalDamageDealt": 34652343,
-      "totalDamageTaken": 5618399,
-      "mostChampionKillsPerSession": 29,
-      "totalMinionKills": 40768,
-      "totalDoubleKills": 190,
-      "totalTripleKills": 35,
-      "totalQuadraKills": 8,
-      "totalPentaKills": 3,
+      "totalSessionsPlayed": 383,
+      "totalSessionsLost": 169,
+      "totalSessionsWon": 214,
+      "totalChampionKills": 2310,
+      "killingSpree": 1071,
+      "totalDamageDealt": 49244765,
+      "totalDamageTaken": 8910374,
+      "mostChampionKillsPerSession": 21,
+      "totalMinionKills": 28226,
+      "totalDoubleKills": 216,
+      "totalTripleKills": 25,
+      "totalQuadraKills": 1,
+      "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1299,
-      "totalGoldEarned": 3066020,
+      "totalDeathsPerSession": 2167,
+      "totalGoldEarned": 4159868,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 241,
-      "totalPhysicalDamageDealt": 12899360,
-      "totalMagicDamageDealt": 21083807,
-      "totalNeutralMinionsKilled": 6334,
+      "totalTurretsKilled": 299,
+      "totalPhysicalDamageDealt": 28657959,
+      "totalMagicDamageDealt": 11323630,
+      "totalNeutralMinionsKilled": 17815,
       "totalFirstBlood": 0,
-      "totalAssists": 1697,
-      "totalHeal": 1385297,
-      "maxLargestKillingSpree": 16,
-      "maxLargestCriticalStrike": 1785,
-      "maxChampionsKilled": 29,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 3074,
-      "maxTimeSpentLiving": 1912,
+      "totalAssists": 3266,
+      "totalHeal": 2796260,
+      "maxLargestKillingSpree": 14,
+      "maxLargestCriticalStrike": 2410,
+      "maxChampionsKilled": 21,
+      "maxNumDeaths": 16,
+      "maxTimePlayed": 2913,
+      "maxTimeSpentLiving": 1774,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "M ckg"
+    "name": "Lava",
+    "sum_id": "19812679"
   },
-  "21490433": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 297,
-      "totalSessionsLost": 125,
-      "totalSessionsWon": 172,
-      "totalChampionKills": 2175,
-      "killingSpree": 1058,
-      "totalDamageDealt": 46098909,
-      "totalDamageTaken": 6487400,
-      "mostChampionKillsPerSession": 25,
-      "totalMinionKills": 57805,
-      "totalDoubleKills": 251,
-      "totalTripleKills": 29,
-      "totalQuadraKills": 4,
-      "totalPentaKills": 2,
+      "totalSessionsPlayed": 696,
+      "totalSessionsLost": 333,
+      "totalSessionsWon": 363,
+      "totalChampionKills": 4046,
+      "killingSpree": 2178,
+      "totalDamageDealt": 98072213,
+      "totalDamageTaken": 17857536,
+      "mostChampionKillsPerSession": 27,
+      "totalMinionKills": 46945,
+      "totalDoubleKills": 354,
+      "totalTripleKills": 43,
+      "totalQuadraKills": 2,
+      "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1572,
-      "totalGoldEarned": 3732618,
+      "totalDeathsPerSession": 2936,
+      "totalGoldEarned": 7927953,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 373,
-      "totalPhysicalDamageDealt": 15587341,
-      "totalMagicDamageDealt": 29586993,
-      "totalNeutralMinionsKilled": 4731,
+      "totalTurretsKilled": 541,
+      "totalPhysicalDamageDealt": 51907217,
+      "totalMagicDamageDealt": 31455651,
+      "totalNeutralMinionsKilled": 46921,
       "totalFirstBlood": 0,
-      "totalAssists": 1907,
-      "totalHeal": 1192528,
-      "maxLargestKillingSpree": 17,
-      "maxLargestCriticalStrike": 1786,
-      "maxChampionsKilled": 25,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 2979,
-      "maxTimeSpentLiving": 1584,
+      "totalAssists": 5889,
+      "totalHeal": 6911436,
+      "maxLargestKillingSpree": 27,
+      "maxLargestCriticalStrike": 982,
+      "maxChampionsKilled": 27,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 3043,
+      "maxTimeSpentLiving": 1834,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "goldenglue"
+    "name": "Pants are Dragon",
+    "sum_id": "22403576"
   },
-  "29161654": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 363,
-      "totalSessionsLost": 159,
-      "totalSessionsWon": 204,
-      "totalChampionKills": 2238,
-      "killingSpree": 1126,
-      "totalDamageDealt": 52047705,
-      "totalDamageTaken": 8961312,
-      "mostChampionKillsPerSession": 20,
-      "totalMinionKills": 31948,
-      "totalDoubleKills": 194,
-      "totalTripleKills": 23,
+      "totalSessionsPlayed": 336,
+      "totalSessionsLost": 144,
+      "totalSessionsWon": 192,
+      "totalChampionKills": 2015,
+      "killingSpree": 1018,
+      "totalDamageDealt": 42953630,
+      "totalDamageTaken": 6822469,
+      "mostChampionKillsPerSession": 18,
+      "totalMinionKills": 47662,
+      "totalDoubleKills": 199,
+      "totalTripleKills": 31,
       "totalQuadraKills": 3,
       "totalPentaKills": 1,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1682,
-      "totalGoldEarned": 4220851,
+      "totalDeathsPerSession": 1662,
+      "totalGoldEarned": 3910477,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 312,
-      "totalPhysicalDamageDealt": 24503826,
-      "totalMagicDamageDealt": 25397576,
-      "totalNeutralMinionsKilled": 24471,
+      "totalTurretsKilled": 334,
+      "totalPhysicalDamageDealt": 23009261,
+      "totalMagicDamageDealt": 18289313,
+      "totalNeutralMinionsKilled": 7772,
       "totalFirstBlood": 0,
-      "totalAssists": 2956,
-      "totalHeal": 2740297,
-      "maxLargestKillingSpree": 12,
-      "maxLargestCriticalStrike": 1707,
-      "maxChampionsKilled": 20,
-      "maxNumDeaths": 12,
-      "maxTimePlayed": 2902,
-      "maxTimeSpentLiving": 2249,
+      "totalAssists": 2738,
+      "totalHeal": 1467067,
+      "maxLargestKillingSpree": 13,
+      "maxLargestCriticalStrike": 2198,
+      "maxChampionsKilled": 18,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3316,
+      "maxTimeSpentLiving": 1720,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "mulgokizary"
+    "name": "MlST",
+    "sum_id": "28982480"
   },
-  "19787999": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 155,
-      "totalSessionsLost": 60,
+      "totalSessionsPlayed": 156,
+      "totalSessionsLost": 61,
       "totalSessionsWon": 95,
-      "totalChampionKills": 912,
+      "totalChampionKills": 913,
       "killingSpree": 430,
-      "totalDamageDealt": 21463495,
-      "totalDamageTaken": 3949682,
+      "totalDamageDealt": 21535230,
+      "totalDamageTaken": 3964726,
       "mostChampionKillsPerSession": 19,
-      "totalMinionKills": 29201,
+      "totalMinionKills": 29362,
       "totalDoubleKills": 81,
       "totalTripleKills": 4,
       "totalQuadraKills": 1,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 816,
-      "totalGoldEarned": 1867282,
+      "totalDeathsPerSession": 823,
+      "totalGoldEarned": 1874663,
       "mostSpellsCast": 0,
       "totalTurretsKilled": 224,
-      "totalPhysicalDamageDealt": 13667640,
-      "totalMagicDamageDealt": 7348663,
-      "totalNeutralMinionsKilled": 1843,
+      "totalPhysicalDamageDealt": 13715327,
+      "totalMagicDamageDealt": 7372711,
+      "totalNeutralMinionsKilled": 1853,
       "totalFirstBlood": 0,
-      "totalAssists": 1124,
-      "totalHeal": 595134,
+      "totalAssists": 1126,
+      "totalHeal": 596848,
       "maxLargestKillingSpree": 12,
       "maxLargestCriticalStrike": 675,
       "maxChampionsKilled": 19,
@@ -1037,9 +857,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "P1 zig"
+    "name": "P1 zig",
+    "sum_id": "19787999"
   },
-  "20964624": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 335,
@@ -1077,9 +898,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "clg imaqtpie69"
+    "name": "clg imaqtpie69",
+    "sum_id": "20964624"
   },
-  "40220617": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 402,
@@ -1117,9 +939,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Lobo Solitarió"
+    "name": "Lobo Solitarió",
+    "sum_id": "40220617"
   },
-  "41233933": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 378,
@@ -1157,9 +980,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "MistyStumpey"
+    "name": "MistyStumpey",
+    "sum_id": "41233933"
   },
-  "32225785": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 594,
@@ -1197,129 +1021,215 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Autolycus1"
+    "name": "Autolycus1",
+    "sum_id": "32225785"
   },
-  "22058309": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 1033,
-      "totalSessionsLost": 489,
-      "totalSessionsWon": 544,
-      "totalChampionKills": 6839,
-      "killingSpree": 3742,
-      "totalDamageDealt": 143678344,
-      "totalDamageTaken": 19098800,
-      "mostChampionKillsPerSession": 28,
-      "totalMinionKills": 181008,
-      "totalDoubleKills": 619,
-      "totalTripleKills": 65,
-      "totalQuadraKills": 6,
-      "totalPentaKills": 1,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 4547,
-      "totalGoldEarned": 12698040,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 1026,
-      "totalPhysicalDamageDealt": 92636636,
-      "totalMagicDamageDealt": 48605310,
-      "totalNeutralMinionsKilled": 17551,
-      "totalFirstBlood": 0,
-      "totalAssists": 7792,
-      "totalHeal": 3521030,
-      "maxLargestKillingSpree": 16,
-      "maxLargestCriticalStrike": 2521,
-      "maxChampionsKilled": 28,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 4879,
-      "maxTimeSpentLiving": 2133,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Zaion"
-  },
-  "68469257": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 191,
-      "totalSessionsLost": 77,
-      "totalSessionsWon": 114,
-      "totalChampionKills": 1372,
-      "killingSpree": 665,
-      "totalDamageDealt": 26670784,
-      "totalDamageTaken": 4988413,
-      "mostChampionKillsPerSession": 23,
-      "totalMinionKills": 32792,
-      "totalDoubleKills": 127,
-      "totalTripleKills": 11,
-      "totalQuadraKills": 2,
+      "totalSessionsPlayed": 506,
+      "totalSessionsLost": 239,
+      "totalSessionsWon": 267,
+      "totalChampionKills": 1522,
+      "killingSpree": 721,
+      "totalDamageDealt": 26144173,
+      "totalDamageTaken": 8548547,
+      "mostChampionKillsPerSession": 14,
+      "totalMinionKills": 17595,
+      "totalDoubleKills": 77,
+      "totalTripleKills": 6,
+      "totalQuadraKills": 1,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1091,
-      "totalGoldEarned": 2320586,
+      "totalDeathsPerSession": 2204,
+      "totalGoldEarned": 4818077,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 250,
-      "totalPhysicalDamageDealt": 15777630,
-      "totalMagicDamageDealt": 10365605,
-      "totalNeutralMinionsKilled": 3217,
+      "totalTurretsKilled": 161,
+      "totalPhysicalDamageDealt": 8901835,
+      "totalMagicDamageDealt": 9645577,
+      "totalNeutralMinionsKilled": 5363,
       "totalFirstBlood": 0,
-      "totalAssists": 1345,
-      "totalHeal": 846318,
-      "maxLargestKillingSpree": 12,
-      "maxLargestCriticalStrike": 1020,
-      "maxChampionsKilled": 23,
-      "maxNumDeaths": 15,
-      "maxTimePlayed": 2879,
-      "maxTimeSpentLiving": 1582,
+      "totalAssists": 6633,
+      "totalHeal": 2309847,
+      "maxLargestKillingSpree": 10,
+      "maxLargestCriticalStrike": 1113,
+      "maxChampionsKilled": 14,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3417,
+      "maxTimeSpentLiving": 1864,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Vsionz"
+    "name": "C9 Smoothie",
+    "sum_id": "20823651"
   },
-  "56149487": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 295,
-      "totalSessionsLost": 128,
-      "totalSessionsWon": 167,
-      "totalChampionKills": 2093,
-      "killingSpree": 1059,
-      "totalDamageDealt": 47453576,
-      "totalDamageTaken": 5853040,
-      "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 60158,
-      "totalDoubleKills": 218,
-      "totalTripleKills": 37,
-      "totalQuadraKills": 9,
-      "totalPentaKills": 1,
+      "totalSessionsPlayed": 442,
+      "totalSessionsLost": 194,
+      "totalSessionsWon": 248,
+      "totalChampionKills": 1170,
+      "killingSpree": 552,
+      "totalDamageDealt": 17128073,
+      "totalDamageTaken": 8288229,
+      "mostChampionKillsPerSession": 10,
+      "totalMinionKills": 21529,
+      "totalDoubleKills": 48,
+      "totalTripleKills": 0,
+      "totalQuadraKills": 0,
+      "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1567,
-      "totalGoldEarned": 3729276,
+      "totalDeathsPerSession": 1978,
+      "totalGoldEarned": 4085348,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 362,
-      "totalPhysicalDamageDealt": 6220663,
-      "totalMagicDamageDealt": 40776295,
-      "totalNeutralMinionsKilled": 4620,
+      "totalTurretsKilled": 139,
+      "totalPhysicalDamageDealt": 4742477,
+      "totalMagicDamageDealt": 10961925,
+      "totalNeutralMinionsKilled": 416,
       "totalFirstBlood": 0,
-      "totalAssists": 1573,
-      "totalHeal": 1326909,
-      "maxLargestKillingSpree": 15,
-      "maxLargestCriticalStrike": 2053,
-      "maxChampionsKilled": 22,
-      "maxNumDeaths": 13,
-      "maxTimePlayed": 3556,
-      "maxTimeSpentLiving": 1281,
+      "totalAssists": 5543,
+      "totalHeal": 1701814,
+      "maxLargestKillingSpree": 8,
+      "maxLargestCriticalStrike": 978,
+      "maxChampionsKilled": 10,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 2977,
+      "maxTimeSpentLiving": 2000,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "TG Strompest"
+    "name": "Brıan",
+    "sum_id": "51094671"
   },
-  "50877721": {
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 717,
+      "totalSessionsLost": 337,
+      "totalSessionsWon": 380,
+      "totalChampionKills": 4944,
+      "killingSpree": 2203,
+      "totalDamageDealt": 96952587,
+      "totalDamageTaken": 13871145,
+      "mostChampionKillsPerSession": 27,
+      "totalMinionKills": 122522,
+      "totalDoubleKills": 669,
+      "totalTripleKills": 102,
+      "totalQuadraKills": 15,
+      "totalPentaKills": 1,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 4221,
+      "totalGoldEarned": 8694347,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 1010,
+      "totalPhysicalDamageDealt": 75932397,
+      "totalMagicDamageDealt": 17877054,
+      "totalNeutralMinionsKilled": 10880,
+      "totalFirstBlood": 0,
+      "totalAssists": 5325,
+      "totalHeal": 1971900,
+      "maxLargestKillingSpree": 15,
+      "maxLargestCriticalStrike": 2361,
+      "maxChampionsKilled": 27,
+      "maxNumDeaths": 16,
+      "maxTimePlayed": 3399,
+      "maxTimeSpentLiving": 1639,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "GrayHoves",
+    "sum_id": "45675133"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 446,
+      "totalSessionsLost": 202,
+      "totalSessionsWon": 244,
+      "totalChampionKills": 3130,
+      "killingSpree": 1540,
+      "totalDamageDealt": 62933199,
+      "totalDamageTaken": 8920841,
+      "mostChampionKillsPerSession": 25,
+      "totalMinionKills": 81199,
+      "totalDoubleKills": 327,
+      "totalTripleKills": 50,
+      "totalQuadraKills": 9,
+      "totalPentaKills": 3,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 2273,
+      "totalGoldEarned": 5451319,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 501,
+      "totalPhysicalDamageDealt": 26698883,
+      "totalMagicDamageDealt": 34519370,
+      "totalNeutralMinionsKilled": 6287,
+      "totalFirstBlood": 0,
+      "totalAssists": 3214,
+      "totalHeal": 1917248,
+      "maxLargestKillingSpree": 17,
+      "maxLargestCriticalStrike": 2812,
+      "maxChampionsKilled": 25,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 2956,
+      "maxTimeSpentLiving": 1735,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "Linsaníty",
+    "sum_id": "21498922"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 312,
+      "totalSessionsLost": 133,
+      "totalSessionsWon": 179,
+      "totalChampionKills": 1881,
+      "killingSpree": 961,
+      "totalDamageDealt": 42231887,
+      "totalDamageTaken": 6336045,
+      "mostChampionKillsPerSession": 24,
+      "totalMinionKills": 46297,
+      "totalDoubleKills": 174,
+      "totalTripleKills": 28,
+      "totalQuadraKills": 3,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 1516,
+      "totalGoldEarned": 3668101,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 317,
+      "totalPhysicalDamageDealt": 18212627,
+      "totalMagicDamageDealt": 22895525,
+      "totalNeutralMinionsKilled": 7119,
+      "totalFirstBlood": 0,
+      "totalAssists": 2634,
+      "totalHeal": 1452205,
+      "maxLargestKillingSpree": 14,
+      "maxLargestCriticalStrike": 2717,
+      "maxChampionsKilled": 24,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3577,
+      "maxTimeSpentLiving": 1693,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "bie sha wo",
+    "sum_id": "72690731"
+  },
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 366,
@@ -1357,9 +1267,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Doubtfull"
+    "name": "Doubtfull",
+    "sum_id": "50877721"
   },
-  "24815394": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 469,
@@ -1397,35 +1308,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Free Papa Chau"
+    "name": "Free Papa Chau",
+    "sum_id": "24815394"
   },
-  "34983603": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 194,
-      "totalSessionsLost": 74,
+      "totalSessionsPlayed": 195,
+      "totalSessionsLost": 75,
       "totalSessionsWon": 120,
-      "totalChampionKills": 1409,
-      "killingSpree": 741,
-      "totalDamageDealt": 29655655,
-      "totalDamageTaken": 4922034,
+      "totalChampionKills": 1415,
+      "killingSpree": 743,
+      "totalDamageDealt": 29774054,
+      "totalDamageTaken": 4942116,
       "mostChampionKillsPerSession": 26,
-      "totalMinionKills": 36778,
-      "totalDoubleKills": 144,
+      "totalMinionKills": 36798,
+      "totalDoubleKills": 145,
       "totalTripleKills": 19,
       "totalQuadraKills": 2,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 910,
-      "totalGoldEarned": 2498400,
+      "totalDeathsPerSession": 917,
+      "totalGoldEarned": 2507108,
       "mostSpellsCast": 0,
       "totalTurretsKilled": 322,
-      "totalPhysicalDamageDealt": 22196214,
-      "totalMagicDamageDealt": 6728620,
-      "totalNeutralMinionsKilled": 4119,
+      "totalPhysicalDamageDealt": 22302490,
+      "totalMagicDamageDealt": 6732427,
+      "totalNeutralMinionsKilled": 4232,
       "totalFirstBlood": 0,
-      "totalAssists": 1341,
-      "totalHeal": 894196,
+      "totalAssists": 1342,
+      "totalHeal": 898968,
       "maxLargestKillingSpree": 12,
       "maxLargestCriticalStrike": 2335,
       "maxChampionsKilled": 26,
@@ -1437,49 +1349,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Licorice"
+    "name": "Licorice",
+    "sum_id": "34983603"
   },
-  "23701242": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 536,
-      "totalSessionsLost": 248,
-      "totalSessionsWon": 288,
-      "totalChampionKills": 3293,
-      "killingSpree": 1774,
-      "totalDamageDealt": 70382201,
-      "totalDamageTaken": 10198917,
-      "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 95913,
-      "totalDoubleKills": 391,
-      "totalTripleKills": 64,
-      "totalQuadraKills": 6,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2518,
-      "totalGoldEarned": 6409782,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 704,
-      "totalPhysicalDamageDealt": 54819300,
-      "totalMagicDamageDealt": 14241574,
-      "totalNeutralMinionsKilled": 4276,
-      "totalFirstBlood": 0,
-      "totalAssists": 4345,
-      "totalHeal": 2140504,
-      "maxLargestKillingSpree": 17,
-      "maxLargestCriticalStrike": 2577,
-      "maxChampionsKilled": 22,
-      "maxNumDeaths": 17,
-      "maxTimePlayed": 3121,
-      "maxTimeSpentLiving": 2163,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Juuichi san "
-  },
-  "20220845": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 308,
@@ -1517,9 +1390,51 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Nikkone"
+    "name": "Nikkone",
+    "sum_id": "20220845"
   },
-  "20130821": {
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 559,
+      "totalSessionsLost": 264,
+      "totalSessionsWon": 295,
+      "totalChampionKills": 3792,
+      "killingSpree": 1754,
+      "totalDamageDealt": 81439481,
+      "totalDamageTaken": 14923683,
+      "mostChampionKillsPerSession": 27,
+      "totalMinionKills": 104411,
+      "totalDoubleKills": 391,
+      "totalTripleKills": 61,
+      "totalQuadraKills": 9,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 3257,
+      "totalGoldEarned": 6863828,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 763,
+      "totalPhysicalDamageDealt": 54680174,
+      "totalMagicDamageDealt": 24545151,
+      "totalNeutralMinionsKilled": 7542,
+      "totalFirstBlood": 0,
+      "totalAssists": 4010,
+      "totalHeal": 2264074,
+      "maxLargestKillingSpree": 13,
+      "maxLargestCriticalStrike": 1680,
+      "maxChampionsKilled": 27,
+      "maxNumDeaths": 18,
+      "maxTimePlayed": 3555,
+      "maxTimeSpentLiving": 1944,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "Cris",
+    "sum_id": "19770082"
+  },
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 402,
@@ -1557,169 +1472,133 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Wiggily"
+    "name": "Wiggily",
+    "sum_id": "20130821"
   },
-  "56539172": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 1151,
-      "totalSessionsLost": 553,
-      "totalSessionsWon": 598,
-      "totalChampionKills": 9901,
-      "killingSpree": 4416,
-      "totalDamageDealt": 172207053,
-      "totalDamageTaken": 23142476,
-      "mostChampionKillsPerSession": 32,
-      "totalMinionKills": 232733,
-      "totalDoubleKills": 1005,
-      "totalTripleKills": 136,
-      "totalQuadraKills": 23,
+      "totalSessionsPlayed": 493,
+      "totalSessionsLost": 211,
+      "totalSessionsWon": 282,
+      "totalChampionKills": 3427,
+      "killingSpree": 1727,
+      "totalDamageDealt": 80134355,
+      "totalDamageTaken": 9811020,
+      "mostChampionKillsPerSession": 30,
+      "totalMinionKills": 97919,
+      "totalDoubleKills": 429,
+      "totalTripleKills": 61,
+      "totalQuadraKills": 9,
+      "totalPentaKills": 2,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 2541,
+      "totalGoldEarned": 6275186,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 827,
+      "totalPhysicalDamageDealt": 69026166,
+      "totalMagicDamageDealt": 9403404,
+      "totalNeutralMinionsKilled": 10275,
+      "totalFirstBlood": 0,
+      "totalAssists": 3412,
+      "totalHeal": 1545455,
+      "maxLargestKillingSpree": 18,
+      "maxLargestCriticalStrike": 2733,
+      "maxChampionsKilled": 30,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 3021,
+      "maxTimeSpentLiving": 2029,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "AsianSGpotato",
+    "sum_id": "36447212"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 281,
+      "totalSessionsLost": 120,
+      "totalSessionsWon": 161,
+      "totalChampionKills": 1652,
+      "killingSpree": 871,
+      "totalDamageDealt": 32543223,
+      "totalDamageTaken": 5957566,
+      "mostChampionKillsPerSession": 19,
+      "totalMinionKills": 33704,
+      "totalDoubleKills": 142,
+      "totalTripleKills": 21,
+      "totalQuadraKills": 2,
       "totalPentaKills": 1,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 6807,
-      "totalGoldEarned": 14898126,
+      "totalDeathsPerSession": 1371,
+      "totalGoldEarned": 3061702,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 1277,
-      "totalPhysicalDamageDealt": 124447361,
-      "totalMagicDamageDealt": 40791591,
-      "totalNeutralMinionsKilled": 10490,
+      "totalTurretsKilled": 264,
+      "totalPhysicalDamageDealt": 17145494,
+      "totalMagicDamageDealt": 13544378,
+      "totalNeutralMinionsKilled": 9356,
       "totalFirstBlood": 0,
-      "totalAssists": 5692,
-      "totalHeal": 3121819,
-      "maxLargestKillingSpree": 21,
-      "maxLargestCriticalStrike": 1424,
-      "maxChampionsKilled": 32,
-      "maxNumDeaths": 15,
-      "maxTimePlayed": 3440,
-      "maxTimeSpentLiving": 1605,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "LL Stylish"
-  },
-  "32622871": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 236,
-      "totalSessionsLost": 87,
-      "totalSessionsWon": 149,
-      "totalChampionKills": 1570,
-      "killingSpree": 838,
-      "totalDamageDealt": 30096241,
-      "totalDamageTaken": 4787284,
-      "mostChampionKillsPerSession": 20,
-      "totalMinionKills": 42254,
-      "totalDoubleKills": 164,
-      "totalTripleKills": 22,
-      "totalQuadraKills": 2,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1132,
-      "totalGoldEarned": 2781470,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 308,
-      "totalPhysicalDamageDealt": 12327284,
-      "totalMagicDamageDealt": 17335965,
-      "totalNeutralMinionsKilled": 2142,
-      "totalFirstBlood": 0,
-      "totalAssists": 1789,
-      "totalHeal": 1442904,
-      "maxLargestKillingSpree": 16,
-      "maxLargestCriticalStrike": 1726,
-      "maxChampionsKilled": 20,
-      "maxNumDeaths": 13,
-      "maxTimePlayed": 3043,
-      "maxTimeSpentLiving": 1981,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Cow Goes Mooooo"
-  },
-  "65389099": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 335,
-      "totalSessionsLost": 149,
-      "totalSessionsWon": 186,
-      "totalChampionKills": 2127,
-      "killingSpree": 1108,
-      "totalDamageDealt": 45196044,
-      "totalDamageTaken": 8276592,
-      "mostChampionKillsPerSession": 23,
-      "totalMinionKills": 55012,
-      "totalDoubleKills": 177,
-      "totalTripleKills": 18,
-      "totalQuadraKills": 4,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1651,
-      "totalGoldEarned": 4004568,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 391,
-      "totalPhysicalDamageDealt": 28461996,
-      "totalMagicDamageDealt": 15443434,
-      "totalNeutralMinionsKilled": 7217,
-      "totalFirstBlood": 0,
-      "totalAssists": 2498,
-      "totalHeal": 1598664,
-      "maxLargestKillingSpree": 14,
-      "maxLargestCriticalStrike": 2331,
-      "maxChampionsKilled": 23,
+      "totalAssists": 1893,
+      "totalHeal": 1212363,
+      "maxLargestKillingSpree": 13,
+      "maxLargestCriticalStrike": 1239,
+      "maxChampionsKilled": 19,
       "maxNumDeaths": 14,
-      "maxTimePlayed": 3471,
-      "maxTimeSpentLiving": 2025,
+      "maxTimePlayed": 2986,
+      "maxTimeSpentLiving": 1553,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "C9 EonYoung"
+    "name": "byulbit",
+    "sum_id": "30478559"
   },
-  "22941674": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 379,
-      "totalSessionsLost": 169,
-      "totalSessionsWon": 210,
-      "totalChampionKills": 1824,
-      "killingSpree": 979,
-      "totalDamageDealt": 40432625,
-      "totalDamageTaken": 9721056,
-      "mostChampionKillsPerSession": 23,
-      "totalMinionKills": 56845,
-      "totalDoubleKills": 145,
-      "totalTripleKills": 10,
-      "totalQuadraKills": 0,
-      "totalPentaKills": 0,
+      "totalSessionsPlayed": 1054,
+      "totalSessionsLost": 504,
+      "totalSessionsWon": 550,
+      "totalChampionKills": 5311,
+      "killingSpree": 2870,
+      "totalDamageDealt": 105835539,
+      "totalDamageTaken": 17109925,
+      "mostChampionKillsPerSession": 26,
+      "totalMinionKills": 149032,
+      "totalDoubleKills": 550,
+      "totalTripleKills": 79,
+      "totalQuadraKills": 9,
+      "totalPentaKills": 3,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1723,
-      "totalGoldEarned": 4117218,
+      "totalDeathsPerSession": 4649,
+      "totalGoldEarned": 11596645,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 237,
-      "totalPhysicalDamageDealt": 7973403,
-      "totalMagicDamageDealt": 31907556,
-      "totalNeutralMinionsKilled": 3068,
+      "totalTurretsKilled": 1218,
+      "totalPhysicalDamageDealt": 84781411,
+      "totalMagicDamageDealt": 18697239,
+      "totalNeutralMinionsKilled": 8098,
       "totalFirstBlood": 0,
-      "totalAssists": 3189,
-      "totalHeal": 3118931,
-      "maxLargestKillingSpree": 16,
-      "maxLargestCriticalStrike": 1236,
-      "maxChampionsKilled": 23,
-      "maxNumDeaths": 13,
-      "maxTimePlayed": 3471,
-      "maxTimeSpentLiving": 1757,
+      "totalAssists": 9101,
+      "totalHeal": 4348362,
+      "maxLargestKillingSpree": 24,
+      "maxLargestCriticalStrike": 2801,
+      "maxChampionsKilled": 26,
+      "maxNumDeaths": 14,
+      "maxTimePlayed": 3386,
+      "maxTimeSpentLiving": 2452,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Nëbu"
+    "name": "Xinthus",
+    "sum_id": "21974037"
   },
-  "579475": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 581,
@@ -1757,9 +1636,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "dawolfsfang"
+    "name": "dawolfsfang",
+    "sum_id": "579475"
   },
-  "77371699": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 779,
@@ -1797,9 +1677,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Joyul"
+    "name": "Joyul",
+    "sum_id": "77371699"
   },
-  "21084089": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 531,
@@ -1837,9 +1718,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "i xo u"
+    "name": "i xo u",
+    "sum_id": "21084089"
   },
-  "83179089": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 271,
@@ -1877,9 +1759,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "AxAxAxAxA"
+    "name": "AxAxAxAxA",
+    "sum_id": "83179089"
   },
-  "75459135": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 392,
@@ -1917,9 +1800,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "TwichTv CoMMa"
+    "name": "TwichTv CoMMa",
+    "sum_id": "75459135"
   },
-  "60805480": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 455,
@@ -1957,169 +1841,174 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "bobqinX"
+    "name": "bobqinX",
+    "sum_id": "60805480"
   },
-  "20227573": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 593,
-      "totalSessionsLost": 273,
-      "totalSessionsWon": 320,
-      "totalChampionKills": 3954,
-      "killingSpree": 2039,
-      "totalDamageDealt": 78708191,
-      "totalDamageTaken": 10489899,
-      "mostChampionKillsPerSession": 23,
-      "totalMinionKills": 94888,
-      "totalDoubleKills": 435,
-      "totalTripleKills": 64,
-      "totalQuadraKills": 10,
-      "totalPentaKills": 1,
+      "totalSessionsPlayed": 297,
+      "totalSessionsLost": 102,
+      "totalSessionsWon": 195,
+      "totalChampionKills": 256,
+      "killingSpree": 93,
+      "totalDamageDealt": 6830631,
+      "totalDamageTaken": 3211415,
+      "mostChampionKillsPerSession": 13,
+      "totalMinionKills": 5297,
+      "totalDoubleKills": 16,
+      "totalTripleKills": 4,
+      "totalQuadraKills": 0,
+      "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2703,
-      "totalGoldEarned": 7055027,
+      "totalDeathsPerSession": 824,
+      "totalGoldEarned": 2547789,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 813,
-      "totalPhysicalDamageDealt": 67399716,
-      "totalMagicDamageDealt": 9505291,
-      "totalNeutralMinionsKilled": 10143,
+      "totalTurretsKilled": 78,
+      "totalPhysicalDamageDealt": 2170973,
+      "totalMagicDamageDealt": 4225420,
+      "totalNeutralMinionsKilled": 385,
       "totalFirstBlood": 0,
-      "totalAssists": 4625,
-      "totalHeal": 1849961,
+      "totalAssists": 4246,
+      "totalHeal": 9562735,
+      "maxLargestKillingSpree": 6,
+      "maxLargestCriticalStrike": 859,
+      "maxChampionsKilled": 13,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3527,
+      "maxTimeSpentLiving": 2384,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "Sęb Bęrnal",
+    "sum_id": "20248040"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 341,
+      "totalSessionsLost": 145,
+      "totalSessionsWon": 196,
+      "totalChampionKills": 2329,
+      "killingSpree": 1220,
+      "totalDamageDealt": 48680968,
+      "totalDamageTaken": 7134087,
+      "mostChampionKillsPerSession": 26,
+      "totalMinionKills": 68844,
+      "totalDoubleKills": 236,
+      "totalTripleKills": 39,
+      "totalQuadraKills": 7,
+      "totalPentaKills": 2,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 1689,
+      "totalGoldEarned": 4209052,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 417,
+      "totalPhysicalDamageDealt": 27402794,
+      "totalMagicDamageDealt": 19184701,
+      "totalNeutralMinionsKilled": 1977,
+      "totalFirstBlood": 0,
+      "totalAssists": 2295,
+      "totalHeal": 1489191,
       "maxLargestKillingSpree": 20,
-      "maxLargestCriticalStrike": 2915,
-      "maxChampionsKilled": 23,
-      "maxNumDeaths": 15,
-      "maxTimePlayed": 4142,
-      "maxTimeSpentLiving": 2070,
+      "maxLargestCriticalStrike": 2226,
+      "maxChampionsKilled": 26,
+      "maxNumDeaths": 19,
+      "maxTimePlayed": 3135,
+      "maxTimeSpentLiving": 2049,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "BukZacH"
+    "name": "Rathma",
+    "sum_id": "19647481"
   },
-  "29533033": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 789,
-      "totalSessionsLost": 347,
-      "totalSessionsWon": 442,
-      "totalChampionKills": 4571,
-      "killingSpree": 2331,
-      "totalDamageDealt": 105297185,
-      "totalDamageTaken": 16223227,
-      "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 111721,
-      "totalDoubleKills": 440,
-      "totalTripleKills": 59,
-      "totalQuadraKills": 8,
-      "totalPentaKills": 1,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 3867,
-      "totalGoldEarned": 9254052,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 926,
-      "totalPhysicalDamageDealt": 63640409,
-      "totalMagicDamageDealt": 32142867,
-      "totalNeutralMinionsKilled": 18385,
-      "totalFirstBlood": 0,
-      "totalAssists": 6784,
-      "totalHeal": 3799858,
-      "maxLargestKillingSpree": 13,
-      "maxLargestCriticalStrike": 2516,
-      "maxChampionsKilled": 22,
-      "maxNumDeaths": 12,
-      "maxTimePlayed": 3330,
-      "maxTimeSpentLiving": 2015,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "PandaTv 656826"
-  },
-  "44989337": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 345,
-      "totalSessionsLost": 146,
-      "totalSessionsWon": 199,
-      "totalChampionKills": 2267,
-      "killingSpree": 1210,
-      "totalDamageDealt": 50136014,
-      "totalDamageTaken": 6154782,
-      "mostChampionKillsPerSession": 25,
-      "totalMinionKills": 72702,
-      "totalDoubleKills": 275,
-      "totalTripleKills": 38,
+      "totalSessionsPlayed": 211,
+      "totalSessionsLost": 91,
+      "totalSessionsWon": 120,
+      "totalChampionKills": 1476,
+      "killingSpree": 703,
+      "totalDamageDealt": 27827412,
+      "totalDamageTaken": 4233883,
+      "mostChampionKillsPerSession": 29,
+      "totalMinionKills": 38766,
+      "totalDoubleKills": 169,
+      "totalTripleKills": 31,
       "totalQuadraKills": 6,
       "totalPentaKills": 2,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1655,
-      "totalGoldEarned": 4331547,
+      "totalDeathsPerSession": 1169,
+      "totalGoldEarned": 2563045,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 640,
-      "totalPhysicalDamageDealt": 43594945,
-      "totalMagicDamageDealt": 5644423,
-      "totalNeutralMinionsKilled": 1705,
+      "totalTurretsKilled": 341,
+      "totalPhysicalDamageDealt": 24661616,
+      "totalMagicDamageDealt": 2533337,
+      "totalNeutralMinionsKilled": 1810,
       "totalFirstBlood": 0,
-      "totalAssists": 2655,
-      "totalHeal": 1042703,
-      "maxLargestKillingSpree": 17,
-      "maxLargestCriticalStrike": 2484,
-      "maxChampionsKilled": 25,
-      "maxNumDeaths": 13,
-      "maxTimePlayed": 3471,
-      "maxTimeSpentLiving": 1955,
+      "totalAssists": 1732,
+      "totalHeal": 708349,
+      "maxLargestKillingSpree": 13,
+      "maxLargestCriticalStrike": 2002,
+      "maxChampionsKilled": 29,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 2888,
+      "maxTimeSpentLiving": 1646,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "C9 Gun"
+    "name": "Arrowlol",
+    "sum_id": "84649274"
   },
-  "20132258": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 565,
-      "totalSessionsLost": 267,
-      "totalSessionsWon": 298,
-      "totalChampionKills": 3613,
-      "killingSpree": 1915,
-      "totalDamageDealt": 92532741,
-      "totalDamageTaken": 9943857,
-      "mostChampionKillsPerSession": 23,
-      "totalMinionKills": 118789,
-      "totalDoubleKills": 409,
-      "totalTripleKills": 66,
-      "totalQuadraKills": 14,
-      "totalPentaKills": 4,
+      "totalSessionsPlayed": 141,
+      "totalSessionsLost": 46,
+      "totalSessionsWon": 95,
+      "totalChampionKills": 1168,
+      "killingSpree": 641,
+      "totalDamageDealt": 20019608,
+      "totalDamageTaken": 2934262,
+      "mostChampionKillsPerSession": 27,
+      "totalMinionKills": 29098,
+      "totalDoubleKills": 111,
+      "totalTripleKills": 14,
+      "totalQuadraKills": 1,
+      "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2482,
-      "totalGoldEarned": 7313078,
+      "totalDeathsPerSession": 590,
+      "totalGoldEarned": 1773348,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 918,
-      "totalPhysicalDamageDealt": 82967017,
-      "totalMagicDamageDealt": 7383668,
-      "totalNeutralMinionsKilled": 11594,
+      "totalTurretsKilled": 209,
+      "totalPhysicalDamageDealt": 9630298,
+      "totalMagicDamageDealt": 9321965,
+      "totalNeutralMinionsKilled": 822,
       "totalFirstBlood": 0,
-      "totalAssists": 4306,
-      "totalHeal": 1918929,
-      "maxLargestKillingSpree": 17,
-      "maxLargestCriticalStrike": 2789,
-      "maxChampionsKilled": 23,
-      "maxNumDeaths": 12,
-      "maxTimePlayed": 3088,
-      "maxTimeSpentLiving": 2037,
+      "totalAssists": 823,
+      "totalHeal": 729717,
+      "maxLargestKillingSpree": 15,
+      "maxLargestCriticalStrike": 1210,
+      "maxChampionsKilled": 27,
+      "maxNumDeaths": 11,
+      "maxTimePlayed": 2808,
+      "maxTimeSpentLiving": 1560,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Doublelift"
+    "name": "qldurtms",
+    "sum_id": "50759139"
   },
-  "23162732": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 488,
@@ -2157,9 +2046,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "JayJ"
+    "name": "JayJ",
+    "sum_id": "23162732"
   },
-  "20187277": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 258,
@@ -2197,9 +2087,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Waggily "
+    "name": "Waggily ",
+    "sum_id": "20187277"
   },
-  "21985833": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 209,
@@ -2237,9 +2128,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "FatèFalls"
+    "name": "FatèFalls",
+    "sum_id": "21985833"
   },
-  "21542029": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 647,
@@ -2277,9 +2169,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Grigne"
+    "name": "Grigne",
+    "sum_id": "21542029"
   },
-  "57539102": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 249,
@@ -2317,9 +2210,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Eygon"
+    "name": "Eygon",
+    "sum_id": "57539102"
   },
-  "23723619": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 490,
@@ -2357,89 +2251,174 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "FreeXpHere"
+    "name": "FreeXpHere",
+    "sum_id": "23723619"
   },
-  "25232745": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 374,
-      "totalSessionsLost": 163,
-      "totalSessionsWon": 211,
-      "totalChampionKills": 2937,
-      "killingSpree": 1625,
-      "totalDamageDealt": 55383989,
-      "totalDamageTaken": 9020142,
-      "mostChampionKillsPerSession": 27,
-      "totalMinionKills": 22761,
-      "totalDoubleKills": 278,
-      "totalTripleKills": 29,
-      "totalQuadraKills": 4,
-      "totalPentaKills": 0,
+      "totalSessionsPlayed": 293,
+      "totalSessionsLost": 127,
+      "totalSessionsWon": 166,
+      "totalChampionKills": 1892,
+      "killingSpree": 953,
+      "totalDamageDealt": 43236836,
+      "totalDamageTaken": 5151272,
+      "mostChampionKillsPerSession": 21,
+      "totalMinionKills": 60917,
+      "totalDoubleKills": 242,
+      "totalTripleKills": 42,
+      "totalQuadraKills": 6,
+      "totalPentaKills": 3,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1475,
-      "totalGoldEarned": 4529697,
+      "totalDeathsPerSession": 1419,
+      "totalGoldEarned": 3633393,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 276,
-      "totalPhysicalDamageDealt": 35809443,
-      "totalMagicDamageDealt": 15688491,
-      "totalNeutralMinionsKilled": 30471,
+      "totalTurretsKilled": 524,
+      "totalPhysicalDamageDealt": 39064866,
+      "totalMagicDamageDealt": 3351161,
+      "totalNeutralMinionsKilled": 2598,
       "totalFirstBlood": 0,
-      "totalAssists": 2776,
-      "totalHeal": 2612938,
-      "maxLargestKillingSpree": 16,
-      "maxLargestCriticalStrike": 1454,
-      "maxChampionsKilled": 27,
-      "maxNumDeaths": 12,
-      "maxTimePlayed": 3048,
-      "maxTimeSpentLiving": 1943,
+      "totalAssists": 2153,
+      "totalHeal": 937704,
+      "maxLargestKillingSpree": 11,
+      "maxLargestCriticalStrike": 2942,
+      "maxChampionsKilled": 21,
+      "maxNumDeaths": 14,
+      "maxTimePlayed": 3622,
+      "maxTimeSpentLiving": 1921,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Chàse"
+    "name": "FOX Shynon",
+    "sum_id": "77432783"
   },
-  "73469341": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 556,
-      "totalSessionsLost": 245,
-      "totalSessionsWon": 311,
-      "totalChampionKills": 3549,
-      "killingSpree": 1846,
-      "totalDamageDealt": 80020360,
-      "totalDamageTaken": 11759473,
-      "mostChampionKillsPerSession": 26,
-      "totalMinionKills": 101944,
-      "totalDoubleKills": 330,
-      "totalTripleKills": 38,
-      "totalQuadraKills": 5,
-      "totalPentaKills": 0,
+      "totalSessionsPlayed": 341,
+      "totalSessionsLost": 145,
+      "totalSessionsWon": 196,
+      "totalChampionKills": 2196,
+      "killingSpree": 1185,
+      "totalDamageDealt": 49425298,
+      "totalDamageTaken": 5688874,
+      "mostChampionKillsPerSession": 24,
+      "totalMinionKills": 64884,
+      "totalDoubleKills": 285,
+      "totalTripleKills": 40,
+      "totalQuadraKills": 8,
+      "totalPentaKills": 1,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2907,
-      "totalGoldEarned": 6790021,
+      "totalDeathsPerSession": 1484,
+      "totalGoldEarned": 4185139,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 613,
-      "totalPhysicalDamageDealt": 25326338,
-      "totalMagicDamageDealt": 52858935,
-      "totalNeutralMinionsKilled": 8050,
+      "totalTurretsKilled": 566,
+      "totalPhysicalDamageDealt": 39049740,
+      "totalMagicDamageDealt": 9388385,
+      "totalNeutralMinionsKilled": 5207,
       "totalFirstBlood": 0,
-      "totalAssists": 4059,
-      "totalHeal": 2157355,
-      "maxLargestKillingSpree": 15,
-      "maxLargestCriticalStrike": 1680,
-      "maxChampionsKilled": 26,
-      "maxNumDeaths": 17,
-      "maxTimePlayed": 3471,
-      "maxTimeSpentLiving": 1835,
+      "totalAssists": 2655,
+      "totalHeal": 1063505,
+      "maxLargestKillingSpree": 20,
+      "maxLargestCriticalStrike": 2914,
+      "maxChampionsKilled": 24,
+      "maxNumDeaths": 13,
+      "maxTimePlayed": 3505,
+      "maxTimeSpentLiving": 2063,
       "normalGamesPlayed": 0,
       "rankedSoloGamesPlayed": 0,
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "pireaNn"
+    "name": "joong ki song",
+    "sum_id": "76379684"
   },
-  "71749871": {
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 380,
+      "totalSessionsLost": 170,
+      "totalSessionsWon": 210,
+      "totalChampionKills": 1317,
+      "killingSpree": 793,
+      "totalDamageDealt": 32305530,
+      "totalDamageTaken": 7151493,
+      "mostChampionKillsPerSession": 14,
+      "totalMinionKills": 42374,
+      "totalDoubleKills": 99,
+      "totalTripleKills": 8,
+      "totalQuadraKills": 0,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 1090,
+      "totalGoldEarned": 3949188,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 194,
+      "totalPhysicalDamageDealt": 17996996,
+      "totalMagicDamageDealt": 13110480,
+      "totalNeutralMinionsKilled": 6919,
+      "totalFirstBlood": 0,
+      "totalAssists": 4067,
+      "totalHeal": 1694641,
+      "maxLargestKillingSpree": 12,
+      "maxLargestCriticalStrike": 1049,
+      "maxChampionsKilled": 14,
+      "maxNumDeaths": 10,
+      "maxTimePlayed": 3431,
+      "maxTimeSpentLiving": 2536,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "SNH48 Ruri",
+    "sum_id": "35890783"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 255,
+      "totalSessionsLost": 105,
+      "totalSessionsWon": 150,
+      "totalChampionKills": 1543,
+      "killingSpree": 832,
+      "totalDamageDealt": 31816019,
+      "totalDamageTaken": 4596804,
+      "mostChampionKillsPerSession": 31,
+      "totalMinionKills": 42358,
+      "totalDoubleKills": 163,
+      "totalTripleKills": 19,
+      "totalQuadraKills": 3,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 1190,
+      "totalGoldEarned": 2882409,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 333,
+      "totalPhysicalDamageDealt": 24784151,
+      "totalMagicDamageDealt": 6439412,
+      "totalNeutralMinionsKilled": 3142,
+      "totalFirstBlood": 0,
+      "totalAssists": 1826,
+      "totalHeal": 916115,
+      "maxLargestKillingSpree": 17,
+      "maxLargestCriticalStrike": 2801,
+      "maxChampionsKilled": 31,
+      "maxNumDeaths": 14,
+      "maxTimePlayed": 2897,
+      "maxTimeSpentLiving": 1558,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "Rikara",
+    "sum_id": "21124626"
+  },
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 342,
@@ -2477,9 +2456,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "a very bad time"
+    "name": "a very bad time",
+    "sum_id": "71749871"
   },
-  "35703236": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 564,
@@ -2517,35 +2497,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "PieCakeLord"
+    "name": "PieCakeLord",
+    "sum_id": "35703236"
   },
-  "75290273": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 310,
-      "totalSessionsLost": 137,
-      "totalSessionsWon": 173,
-      "totalChampionKills": 1816,
-      "killingSpree": 1028,
-      "totalDamageDealt": 56640834,
-      "totalDamageTaken": 7901983,
+      "totalSessionsPlayed": 314,
+      "totalSessionsLost": 139,
+      "totalSessionsWon": 175,
+      "totalChampionKills": 1832,
+      "killingSpree": 1037,
+      "totalDamageDealt": 57325522,
+      "totalDamageTaken": 8023538,
       "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 60657,
-      "totalDoubleKills": 188,
+      "totalMinionKills": 61528,
+      "totalDoubleKills": 189,
       "totalTripleKills": 30,
       "totalQuadraKills": 7,
       "totalPentaKills": 0,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1411,
-      "totalGoldEarned": 4123862,
+      "totalDeathsPerSession": 1433,
+      "totalGoldEarned": 4171335,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 314,
-      "totalPhysicalDamageDealt": 52532265,
-      "totalMagicDamageDealt": 3093710,
-      "totalNeutralMinionsKilled": 16547,
+      "totalTurretsKilled": 320,
+      "totalPhysicalDamageDealt": 53195365,
+      "totalMagicDamageDealt": 3110498,
+      "totalNeutralMinionsKilled": 16682,
       "totalFirstBlood": 0,
-      "totalAssists": 1851,
-      "totalHeal": 1912956,
+      "totalAssists": 1871,
+      "totalHeal": 1938436,
       "maxLargestKillingSpree": 14,
       "maxLargestCriticalStrike": 1412,
       "maxChampionsKilled": 22,
@@ -2557,35 +2538,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Corsair Dekar"
+    "name": "Corsair Dekar",
+    "sum_id": "75290273"
   },
-  "170340": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 396,
-      "totalSessionsLost": 173,
-      "totalSessionsWon": 223,
-      "totalChampionKills": 2584,
-      "killingSpree": 1388,
-      "totalDamageDealt": 54020234,
-      "totalDamageTaken": 7938859,
+      "totalSessionsPlayed": 398,
+      "totalSessionsLost": 174,
+      "totalSessionsWon": 224,
+      "totalChampionKills": 2591,
+      "killingSpree": 1390,
+      "totalDamageDealt": 54182426,
+      "totalDamageTaken": 7965445,
       "mostChampionKillsPerSession": 22,
-      "totalMinionKills": 61736,
-      "totalDoubleKills": 282,
+      "totalMinionKills": 62015,
+      "totalDoubleKills": 283,
       "totalTripleKills": 44,
       "totalQuadraKills": 16,
       "totalPentaKills": 4,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 1826,
-      "totalGoldEarned": 4691685,
+      "totalDeathsPerSession": 1836,
+      "totalGoldEarned": 4708780,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 545,
-      "totalPhysicalDamageDealt": 39571016,
-      "totalMagicDamageDealt": 10143434,
-      "totalNeutralMinionsKilled": 10382,
+      "totalTurretsKilled": 548,
+      "totalPhysicalDamageDealt": 39725543,
+      "totalMagicDamageDealt": 10150839,
+      "totalNeutralMinionsKilled": 10385,
       "totalFirstBlood": 0,
-      "totalAssists": 3204,
-      "totalHeal": 1885716,
+      "totalAssists": 3211,
+      "totalHeal": 1890198,
       "maxLargestKillingSpree": 16,
       "maxLargestCriticalStrike": 2761,
       "maxChampionsKilled": 22,
@@ -2597,35 +2579,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Deep Learning"
+    "name": "Deep Learning",
+    "sum_id": "170340"
   },
-  "28663867": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 789,
-      "totalSessionsLost": 372,
-      "totalSessionsWon": 417,
-      "totalChampionKills": 4472,
-      "killingSpree": 2359,
-      "totalDamageDealt": 105713918,
-      "totalDamageTaken": 12266219,
+      "totalSessionsPlayed": 794,
+      "totalSessionsLost": 375,
+      "totalSessionsWon": 419,
+      "totalChampionKills": 4504,
+      "killingSpree": 2382,
+      "totalDamageDealt": 106433711,
+      "totalDamageTaken": 12364389,
       "mostChampionKillsPerSession": 28,
-      "totalMinionKills": 140232,
-      "totalDoubleKills": 541,
-      "totalTripleKills": 64,
+      "totalMinionKills": 141146,
+      "totalDoubleKills": 544,
+      "totalTripleKills": 65,
       "totalQuadraKills": 10,
       "totalPentaKills": 3,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 3513,
-      "totalGoldEarned": 9414099,
+      "totalDeathsPerSession": 3539,
+      "totalGoldEarned": 9479395,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 1128,
-      "totalPhysicalDamageDealt": 92172438,
-      "totalMagicDamageDealt": 11836758,
-      "totalNeutralMinionsKilled": 11514,
+      "totalTurretsKilled": 1135,
+      "totalPhysicalDamageDealt": 92685215,
+      "totalMagicDamageDealt": 12029220,
+      "totalNeutralMinionsKilled": 11593,
       "totalFirstBlood": 0,
-      "totalAssists": 6661,
-      "totalHeal": 2252386,
+      "totalAssists": 6697,
+      "totalHeal": 2268612,
       "maxLargestKillingSpree": 17,
       "maxLargestCriticalStrike": 2806,
       "maxChampionsKilled": 28,
@@ -2637,9 +2620,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Erry"
+    "name": "Erry",
+    "sum_id": "28663867"
   },
-  "85219089": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 215,
@@ -2677,9 +2661,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "63FYWJMbam"
+    "name": "63FYWJMbam",
+    "sum_id": "85219089"
   },
-  "19920510": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 646,
@@ -2717,9 +2702,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": " Sudzzi"
+    "name": " Sudzzi",
+    "sum_id": "19920510"
   },
-  "32392626": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 627,
@@ -2757,9 +2743,92 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Dhokla"
+    "name": "Dhokla",
+    "sum_id": "32392626"
   },
-  "68301925": {
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 892,
+      "totalSessionsLost": 418,
+      "totalSessionsWon": 474,
+      "totalChampionKills": 6267,
+      "killingSpree": 3127,
+      "totalDamageDealt": 107046169,
+      "totalDamageTaken": 21334019,
+      "mostChampionKillsPerSession": 32,
+      "totalMinionKills": 142149,
+      "totalDoubleKills": 723,
+      "totalTripleKills": 121,
+      "totalQuadraKills": 12,
+      "totalPentaKills": 1,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 4752,
+      "totalGoldEarned": 10406279,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 919,
+      "totalPhysicalDamageDealt": 70489957,
+      "totalMagicDamageDealt": 34651388,
+      "totalNeutralMinionsKilled": 13601,
+      "totalFirstBlood": 0,
+      "totalAssists": 5750,
+      "totalHeal": 7428607,
+      "maxLargestKillingSpree": 17,
+      "maxLargestCriticalStrike": 1680,
+      "maxChampionsKilled": 32,
+      "maxNumDeaths": 15,
+      "maxTimePlayed": 4382,
+      "maxTimeSpentLiving": 1998,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "RiceLegend",
+    "sum_id": "22220672"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 782,
+      "totalSessionsLost": 375,
+      "totalSessionsWon": 407,
+      "totalChampionKills": 2374,
+      "killingSpree": 1096,
+      "totalDamageDealt": 42026471,
+      "totalDamageTaken": 13992261,
+      "mostChampionKillsPerSession": 24,
+      "totalMinionKills": 49000,
+      "totalDoubleKills": 175,
+      "totalTripleKills": 24,
+      "totalQuadraKills": 2,
+      "totalPentaKills": 1,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 3545,
+      "totalGoldEarned": 7486156,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 374,
+      "totalPhysicalDamageDealt": 19088958,
+      "totalMagicDamageDealt": 21271131,
+      "totalNeutralMinionsKilled": 3805,
+      "totalFirstBlood": 0,
+      "totalAssists": 9046,
+      "totalHeal": 3275713,
+      "maxLargestKillingSpree": 13,
+      "maxLargestCriticalStrike": 2423,
+      "maxChampionsKilled": 24,
+      "maxNumDeaths": 14,
+      "maxTimePlayed": 4187,
+      "maxTimeSpentLiving": 2103,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "Vµlcan",
+    "sum_id": "21276764"
+  },
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 419,
@@ -2797,9 +2866,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "LCS Actor 4"
+    "name": "LCS Actor 4",
+    "sum_id": "68301925"
   },
-  "38880034": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 651,
@@ -2837,9 +2907,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Soligo"
+    "name": "Soligo",
+    "sum_id": "38880034"
   },
-  "50539313": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 489,
@@ -2877,9 +2948,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Entranced"
+    "name": "Entranced",
+    "sum_id": "50539313"
   },
-  "27282584": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 614,
@@ -2917,9 +2989,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "lmpactful"
+    "name": "lmpactful",
+    "sum_id": "27282584"
   },
-  "37832463": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 283,
@@ -2957,35 +3030,36 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Eitori"
+    "name": "Eitori",
+    "sum_id": "37832463"
   },
-  "2648": {
+  {
     "id": 0,
     "stats": {
-      "totalSessionsPlayed": 551,
-      "totalSessionsLost": 248,
-      "totalSessionsWon": 303,
-      "totalChampionKills": 3844,
-      "killingSpree": 1890,
-      "totalDamageDealt": 79146617,
-      "totalDamageTaken": 11165671,
+      "totalSessionsPlayed": 556,
+      "totalSessionsLost": 249,
+      "totalSessionsWon": 307,
+      "totalChampionKills": 3888,
+      "killingSpree": 1910,
+      "totalDamageDealt": 79792021,
+      "totalDamageTaken": 11292672,
       "mostChampionKillsPerSession": 24,
-      "totalMinionKills": 108525,
-      "totalDoubleKills": 400,
-      "totalTripleKills": 55,
+      "totalMinionKills": 109067,
+      "totalDoubleKills": 404,
+      "totalTripleKills": 56,
       "totalQuadraKills": 8,
       "totalPentaKills": 2,
       "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2858,
-      "totalGoldEarned": 6762306,
+      "totalDeathsPerSession": 2886,
+      "totalGoldEarned": 6826417,
       "mostSpellsCast": 0,
-      "totalTurretsKilled": 659,
-      "totalPhysicalDamageDealt": 23919369,
-      "totalMagicDamageDealt": 53232965,
-      "totalNeutralMinionsKilled": 6645,
+      "totalTurretsKilled": 665,
+      "totalPhysicalDamageDealt": 24181773,
+      "totalMagicDamageDealt": 53591100,
+      "totalNeutralMinionsKilled": 6871,
       "totalFirstBlood": 0,
-      "totalAssists": 3410,
-      "totalHeal": 2152436,
+      "totalAssists": 3468,
+      "totalHeal": 2185522,
       "maxLargestKillingSpree": 14,
       "maxLargestCriticalStrike": 1908,
       "maxChampionsKilled": 24,
@@ -2997,9 +3071,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Pobelter"
+    "name": "Pobelter",
+    "sum_id": "2648"
   },
-  "581716": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 301,
@@ -3037,9 +3112,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "dàwolfsclaw"
+    "name": "dàwolfsclaw",
+    "sum_id": "581716"
   },
-  "21645177": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 183,
@@ -3077,9 +3153,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "VK Deemo"
+    "name": "VK Deemo",
+    "sum_id": "21645177"
   },
-  "20072604": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 626,
@@ -3117,9 +3194,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Abou222"
+    "name": "Abou222",
+    "sum_id": "20072604"
   },
-  "55629820": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 257,
@@ -3157,49 +3235,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Butler Delta"
+    "name": "Butler Delta",
+    "sum_id": "55629820"
   },
-  "446965": {
-    "id": 0,
-    "stats": {
-      "totalSessionsPlayed": 450,
-      "totalSessionsLost": 204,
-      "totalSessionsWon": 246,
-      "totalChampionKills": 3145,
-      "killingSpree": 1505,
-      "totalDamageDealt": 62276256,
-      "totalDamageTaken": 9413725,
-      "mostChampionKillsPerSession": 24,
-      "totalMinionKills": 83783,
-      "totalDoubleKills": 325,
-      "totalTripleKills": 39,
-      "totalQuadraKills": 5,
-      "totalPentaKills": 0,
-      "totalUnrealKills": 0,
-      "totalDeathsPerSession": 2685,
-      "totalGoldEarned": 5557071,
-      "mostSpellsCast": 0,
-      "totalTurretsKilled": 557,
-      "totalPhysicalDamageDealt": 28769192,
-      "totalMagicDamageDealt": 32255784,
-      "totalNeutralMinionsKilled": 5051,
-      "totalFirstBlood": 0,
-      "totalAssists": 3269,
-      "totalHeal": 1795822,
-      "maxLargestKillingSpree": 12,
-      "maxLargestCriticalStrike": 2385,
-      "maxChampionsKilled": 24,
-      "maxNumDeaths": 14,
-      "maxTimePlayed": 3761,
-      "maxTimeSpentLiving": 1508,
-      "normalGamesPlayed": 0,
-      "rankedSoloGamesPlayed": 0,
-      "rankedPremadeGamesPlayed": 0,
-      "botGamesPlayed": 0
-    },
-    "name": "Ablazeolive"
-  },
-  "35590582": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 1253,
@@ -3237,9 +3276,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Annie Bot"
+    "name": "Annie Bot",
+    "sum_id": "35590582"
   },
-  "28962728": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 390,
@@ -3277,9 +3317,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "tchikou"
+    "name": "tchikou",
+    "sum_id": "28962728"
   },
-  "43565888": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 312,
@@ -3317,9 +3358,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "PotIuck"
+    "name": "PotIuck",
+    "sum_id": "43565888"
   },
-  "80050514": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 678,
@@ -3357,9 +3399,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "scarrafan69"
+    "name": "scarrafan69",
+    "sum_id": "80050514"
   },
-  "59189004": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 904,
@@ -3397,9 +3440,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "P1 Shady"
+    "name": "P1 Shady",
+    "sum_id": "59189004"
   },
-  "32932398": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 417,
@@ -3437,9 +3481,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "Contractz"
+    "name": "Contractz",
+    "sum_id": "32932398"
   },
-  "35592112": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 400,
@@ -3477,9 +3522,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "stuntopolis"
+    "name": "stuntopolis",
+    "sum_id": "35592112"
   },
-  "21836856": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 361,
@@ -3517,9 +3563,10 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "xFSN Rin"
+    "name": "xFSN Rin",
+    "sum_id": "21836856"
   },
-  "28690500": {
+  {
     "id": 0,
     "stats": {
       "totalSessionsPlayed": 784,
@@ -3557,6 +3604,48 @@
       "rankedPremadeGamesPlayed": 0,
       "botGamesPlayed": 0
     },
-    "name": "KaNKl"
+    "name": "KaNKl",
+    "sum_id": "28690500"
+  },
+  {
+    "id": 0,
+    "stats": {
+      "totalSessionsPlayed": 586,
+      "totalSessionsLost": 261,
+      "totalSessionsWon": 325,
+      "totalChampionKills": 3138,
+      "killingSpree": 1624,
+      "totalDamageDealt": 79776971,
+      "totalDamageTaken": 10866424,
+      "mostChampionKillsPerSession": 19,
+      "totalMinionKills": 90767,
+      "totalDoubleKills": 231,
+      "totalTripleKills": 20,
+      "totalQuadraKills": 1,
+      "totalPentaKills": 0,
+      "totalUnrealKills": 0,
+      "totalDeathsPerSession": 3021,
+      "totalGoldEarned": 6430360,
+      "mostSpellsCast": 0,
+      "totalTurretsKilled": 659,
+      "totalPhysicalDamageDealt": 12308285,
+      "totalMagicDamageDealt": 66040426,
+      "totalNeutralMinionsKilled": 10946,
+      "totalFirstBlood": 0,
+      "totalAssists": 4167,
+      "totalHeal": 1441265,
+      "maxLargestKillingSpree": 19,
+      "maxLargestCriticalStrike": 1724,
+      "maxChampionsKilled": 19,
+      "maxNumDeaths": 14,
+      "maxTimePlayed": 3102,
+      "maxTimeSpentLiving": 2110,
+      "normalGamesPlayed": 0,
+      "rankedSoloGamesPlayed": 0,
+      "rankedPremadeGamesPlayed": 0,
+      "botGamesPlayed": 0
+    },
+    "name": "S D 2 NA",
+    "sum_id": "35404350"
   }
-}
+]

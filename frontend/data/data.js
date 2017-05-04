@@ -1,4 +1,5 @@
 import { APIUTIL } from '../scripts/api_util';
+import Draw from '../scripts/draw';
 
 class Data {
 
@@ -17,11 +18,13 @@ class Data {
       //   rank.push(el.leaguePoints);
       //   return el.playerOrTeamId;
       // });
-
+      //
       // APIUTIL.fetchChallengerMatches(first, name).then((r) => console.log(r));
       APIUTIL.fetchChallengerMatchesJson().then((r) => {
+        console.log(r.length)
         this.challengerList = r;
-        // debugger
+        const draw = new Draw(this.challengerPlayers.entries, this.challengerList);
+        draw.render();
       });
     });
   }

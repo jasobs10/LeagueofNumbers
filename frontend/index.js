@@ -5,9 +5,9 @@ $(() => {
   // let challengersArray;
 
   let a = new Data();
-  let b = a.fetchChallengers().then((r) => {
-    debugger
-  });
+  a.fetchChallengers()
+
+
 
   // debugger;
 

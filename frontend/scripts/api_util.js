@@ -40,7 +40,7 @@ export const APIUTIL = {
   },
 
   fetchChallengerMatchesJson: () => {
-    return $.getJSON('matches3.json', (data) => {
+    return $.getJSON('data/matches4.json', (data) => {
       // console.log(data);
     });
   }

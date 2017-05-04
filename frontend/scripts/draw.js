@@ -1,9 +1,24 @@
 class Chart {
-  constructor(players, list) {
-    this.players = players;
-    this.list = list;
+  constructor(svgId) {
+    // this.players = players;
+    // this.list = list;
   }
 
+  render() {
+    // debugger
+  }
+
+  renderData(data) {
+
+  }
+
+  addAxes(data) {
+
+  }
+
+  clearChart() {
+    
+  }
 
 }
 
