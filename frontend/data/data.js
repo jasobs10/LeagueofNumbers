@@ -7,7 +7,7 @@ class Data {
 
     this.challengerList = "";
   }
-  fetchChallengers() {
+  fetchChallengers(xArg, yArg) {
     //
     // APIUTIL.fetchChallengers().then((r) => {
     //   const name = [];
@@ -24,7 +24,7 @@ class Data {
         console.log(r.length)
         this.challengerList = r;
         const draw = new Draw(this.challengerList);
-        draw.render();
+        draw.render(xArg, yArg);
       });
     // });
   }

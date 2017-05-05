@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- div, h1, h2, body, html, header, nav, a, ul, li, main, section, img, p, form, i, label, input, textarea, span, article, footer, time, button {
+ div, h1, h2, h3, body, html, header, nav, a, ul, li, main, section, img, p, form, i, label, input, textarea, span, article, footer, time, button {
    margin: 0;
    padding: 0;
    border: 0;
@@ -68,8 +68,111 @@ button,
 
 
  body {
-   font: 11px sans-serif;
+   font-size: 12px;
+   font-family: 'Lato', sans-serif;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
  }
+
+  .chart-container {
+    flex: 3;
+  }
+
+
+
+  .forms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    background-color: gray;
+    padding: 6% 0;
+
+
+
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+    
+  }
+
+  .dropdowns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 18%;
+
+  }
+
+  .select-wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    /*height: 30%;*/
+  }
+
+  div > label {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .input-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    padding: 2% 4%;
+    font-size: 13px;
+    width: 100%;
+  }
+  .submit {
+    text-align: center;
+    padding: 3px;
+    background-color: yellow;
+    width: 50%;
+  }
+
+  .playerinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+
+  }
+
+  h3 {
+    margin-bottom: 2%;
+    font-size: 15px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .side-bar-container {
+    flex: 1;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
 
  .axis path,
  .axis line {
@@ -81,10 +184,6 @@ button,
  .axis text {
    font-family: sans-serif;
    font-size: 11px;
- }
-
- .dot {
-   stroke: #000;
  }
 
  .tooltip {
