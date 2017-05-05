@@ -1,3 +1,5 @@
+import {labels} from './helper';
+
 class Draw {
   constructor(list) {
 
@@ -18,11 +20,11 @@ class Draw {
       xKey = "maxTimePlayed";
       yKey = "totalChampionKills";
     }
-    const margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    const margin = {top: 30, right: 20, bottom: 30, left: 65},
+    width = 800 - margin.left - margin.right,
+    height = 550 - margin.top - margin.bottom;
 
-    const x = d3.scaleTime().range([0, width]);
+    const x = d3.scaleLinear().range([0, width]);
     const y = d3.scaleLinear().range([height, 0]);
 
     const svg = d3.select(".chart-container").append("svg")
@@ -31,30 +33,70 @@ class Draw {
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        
+    const tooltip = d3.select(".chart-container").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
 
     // use + to change to integer
     this.list.forEach((d) => {
       d.stats[xKey] = +d.stats[xKey];
       d.stats[yKey] = +d.stats[yKey];
+      d.rank = +d.rank;
     });
 
     x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
+
     y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
 
     svg.selectAll('dot')
         .data(this.list)
       .enter().append('circle')
-        .attr("r", 5)
+        // .attr("r", 5)
+        .attr("r", (d) => Math.sqrt(d.rank / 3))
         .attr("cx", (d) => x(d.stats[xKey]))
-        .attr("cy", (d) => y(d.stats[yKey]));
+        .attr("cy", (d) => y(d.stats[yKey]))
+        .style("fill", () => '#' + Math.floor(Math.random()*16777215).toString(16))
+        // .style("fill", () => "hsl(" + Math.random() * 360 + ",100%,50%)"
+        .on("mouseover", (d) => {
+          tooltip.transition()
+            .duration(200)
+            .style("opacity", .9)
+            // .style("background-color", "black")
+          tooltip.html(d.name + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
+              .style("left", (d3.event.pageX + 5) + "px")
+              .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", (d) => {
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+        });
 
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
+    svg.append("text")
+      .attr("transform",
+        "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
+      .attr("dx", "1em")
+      .style("text-anchor", "middle")
+      .attr("class", "axis-label")
+      .text(`${labels[xKey]}`);
 
     svg.append("g")
         .call(d3.axisLeft(y));
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .attr("class", "axis-label")
+      .style("text-anchor", "middle")
+      .text(`${labels[yKey]}`);
+
+
 
     // debugger
  //    var margin = {top: 20, right: 20, bottom: 30, left: 40},

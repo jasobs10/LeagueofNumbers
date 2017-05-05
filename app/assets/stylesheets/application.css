@@ -13,6 +13,58 @@
  *= require_tree .
  *= require_self
  */
+ div, h1, h2, body, html, header, nav, a, ul, li, main, section, img, p, form, i, label, input, textarea, span, article, footer, time, button {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   color: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   box-sizing: inherit;
+   background: transparent;
+   font-size: 100%;
+   -webkit-font-smoothing: antialiased;
+ }
+
+  input[type="password"],
+  input[type="email"],
+  input[type="text"],
+  input[type="submit"],
+  input[type="file"],
+  textarea,
+  button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="text"], input[type="password"] {
+  border: 0.2px solid rgb(189, 186, 186);
+  border-radius: 3px;
+}
+
+button,
+  input[type="submit"] {
+  cursor: pointer;
+}
+
+
+
+ ul {
+   list-style: none;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
 
 
  body {
@@ -26,6 +78,11 @@
    shape-rendering: crispEdges;
  }
 
+ .axis text {
+   font-family: sans-serif;
+   font-size: 11px;
+ }
+
  .dot {
    stroke: #000;
  }
@@ -35,4 +92,8 @@
    width: 200px;
    height: 28px;
    pointer-events: none;
+ }
+
+ .axis-label {
+   font-size: 20px;
  }

@@ -13,24 +13,24 @@ export const labels = {
   "totalTripleKills": "Total Triple Kills",
   "totalQuadraKills": "Total Quadra Kills",
   "totalPentaKills":  "Total Penta Kills",
-  "totalDeathsPerSession": "Total Deaths Per Game"
-  "totalGoldEarned":
-  "mostSpellsCast":
-  "totalTurretsKilled":
-  "totalPhysicalDamageDealt":
-  "totalMagicDamageDealt":
-  "totalNeutralMinionsKilled":
-  "totalFirstBlood":
-  "totalAssists":
-  "totalHeal":
-  "maxLargestKillingSpree":
-  "maxLargestCriticalStrike":
-  "maxChampionsKilled":
-  "maxNumDeaths":
-  "maxTimePlayed":
-  "maxTimeSpentLiving":
-  "normalGamesPlayed":
-  "rankedSoloGamesPlayed":
-  "rankedPremadeGamesPlayed":
-  "botGamesPlayed":
+  "totalDeathsPerSession": "Total Deaths Per Game",
+  "totalGoldEarned": "Total Gold Earned",
+  "mostSpellsCast": "Most Spells Cast",
+  "totalTurretsKilled": "Total Turrets Killed",
+  "totalPhysicalDamageDealt": "Total Physical Damage Dealt",
+  "totalMagicDamageDealt": "Total Magic Damage Dealth",
+  "totalNeutralMinionsKilled": "Total Neutral Minions Killed",
+  "totalFirstBlood": "Total First Bloods",
+  "totalAssists": "Total Assists",
+  "totalHeal": "Total Healing Done",
+  "maxLargestKillingSpree": "Largest Killing Spree",
+  "maxLargestCriticalStrike": "Largest Critical Strike",
+  "maxChampionsKilled": "Champions Killed",
+  "maxNumDeaths": "Number of Deaths",
+  "maxTimePlayed": "Hours Played This Season",
+  "maxTimeSpentLiving": "Time Spent Living",
+  "normalGamesPlayed":  "Number of Normals Played",
+  "rankedSoloGamesPlayed": "Number of Ranked Solo Played",
+  "rankedPremadeGamesPlayed": "Number of Ranked Premade Played",
+  "botGamesPlayed": "Bot Games Played"
 };
