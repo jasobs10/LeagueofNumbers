@@ -12,8 +12,8 @@ export const labels = {
   "totalDoubleKills": "Total Double Kills",
   "totalTripleKills": "Total Triple Kills",
   "totalQuadraKills": "Total Quadra Kills",
-  "totalPentaKills":  "Total Penta Kills",
-  "totalDeathsPerSession": "Total Deaths Per Game",
+  "totalPentaKills": "Total Penta Kills",
+  "totalDeathsPerSession": "Total Deaths",
   "totalGoldEarned": "Total Gold Earned",
   "mostSpellsCast": "Most Spells Cast",
   "totalTurretsKilled": "Total Turrets Killed",
@@ -29,8 +29,8 @@ export const labels = {
   "maxNumDeaths": "Number of Deaths",
   "maxTimePlayed": "Hours Played This Season",
   "maxTimeSpentLiving": "Time Spent Living",
-  "normalGamesPlayed":  "Number of Normals Played",
+  "normalGamesPlayed": "Number of Normals Played",
   "rankedSoloGamesPlayed": "Number of Ranked Solo Played",
   "rankedPremadeGamesPlayed": "Number of Ranked Premade Played",
-  "botGamesPlayed": "Bot Games Played"
+  "kda": "Kill/Deaths/Assists Ratio"
 };

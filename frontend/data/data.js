@@ -1,6 +1,8 @@
 import { APIUTIL } from '../scripts/api_util';
 import Draw from '../scripts/draw';
 
+
+
 class Data {
 
   constructor() {
@@ -24,7 +26,9 @@ class Data {
         console.log(r.length)
         this.challengerList = r;
         const draw = new Draw(this.challengerList);
+        draw.addOptions();
         draw.render(xArg, yArg);
+        // APIUTIL.fetchSummonerByName("Just Katarina").then((r) => console.log(r));
       });
     // });
   }

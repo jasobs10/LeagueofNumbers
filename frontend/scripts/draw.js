@@ -10,6 +10,33 @@ class Draw {
   //
   // }
 
+  addOptions(x, y) {
+    const $x = $('#x-axis');
+    const $y = $('#y-axis');
+    $x.append("<option disabled selected> -- select data -- </option>");
+    $y.append("<option disabled selected> -- select data -- </option>");
+    Object.keys(labels).forEach((el) => {
+      $x.append(`<option value=${el}>${labels[el]}</option>`);
+      $y.append(`<option value=${el}>${labels[el]}</option>`);
+    });
+    $x.change((e) => {
+
+    });
+
+    $('.dropdowns').submit((e) => {
+      e.preventDefault();
+      const xAx = $x.find(":selected").val();
+      const yAx = $y.find(":selected").val();
+      this.render(xAx, yAx);
+    });
+  }
+
+  renderPlayer(data) {
+    
+  }
+
+
+
   render(xArg, yArg) {
     let xKey;
     let yKey;
@@ -20,12 +47,15 @@ class Draw {
       xKey = "maxTimePlayed";
       yKey = "totalChampionKills";
     }
+
+    // add a function to calculate the data i need.  For kda, do if xKey or yKey === kda, then change it
     const margin = {top: 30, right: 20, bottom: 30, left: 65},
     width = 800 - margin.left - margin.right,
     height = 550 - margin.top - margin.bottom;
 
     const x = d3.scaleLinear().range([0, width]);
     const y = d3.scaleLinear().range([height, 0]);
+    d3.select("svg").remove();
 
     const svg = d3.select(".chart-container").append("svg")
         .attr("width", width + margin.left + margin.right)
