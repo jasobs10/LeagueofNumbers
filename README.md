@@ -1,27 +1,41 @@
 # League of Numbers
-## MVP
-League of Numbers is a statistical visualization tool. Users will be able to interact, sort and explore visual data from League of Legends.
 
-- [ ] Display multiple player statistics
-- [ ] Color code by different statistics and heatmap
-- [ ] Filter by various statistical categories
-- [ ] User input for lookup and interactions
-- [ ] Production README
+League of Numbers is a tool to visualize statistics of the top 200 players of the 2017 season, and user inputted players.
+
 
 ## Technologies & APIs
 * JavaScript
 * D3.js
 * Riot Games API
+* Ruby
+* Ruby on Rails
 
-The Riot Games API will provide player data and match data. The chart will be built using an SVG element, with plots rendered on it using D3.js.
 
-## Implementation Timeline
+## Features
 
-### Day 1
-Learn how to render chart with D3 library. Get data needed from Riot API to render basic statistics. Figure out how to limit API calls.
+### Data
 
-### Day 2
-Add more data, and begin colorizing stats. Keep track of highly visited coordinates, which will be heat mapped.
+Data for the top ranked players is prefetched through multiple calls to the Riot Games API. Statistics for each top ranked player is aggregated on the front-end. Users can input a player name into the input box, and data for that specific player will be returned, aggregated and rendered.
 
-### Day 3
-Add filters and user interactions
+Because the Riot Games API does not allow for front-end AJAX request, API requests are handled by the `SummonersController` and `ChallengersController`.
+An API is called to the respective controller, which returns the data from the HTTP request.
+
+### Visualization
+
+The chart is an SVG element, with data points being rendered as circles onto it by D3.js. A dropdown select box allows users to select what statistics the X and Y axis will represent. Circle size represents the rank of the player. Data is prefetched which allows instant rendering of different datasets.
+
+The Auto Axis feature keeps either the X or Y axis dataset static, while the opposite axis will cycle through each dataset available to that axis.
+
+## Future Directions
+
+### 1v1 Simulation
+
+Allow users to select any 2 players from the chart, and will use my created algorithm to predict the winner of a 1v1. Will show updates in real time.
+
+### Time Data
+
+Render a chart which represents time data.
+
+### Live Data
+
+Since I am limited to a certain number of API requests, it is difficult to aggregate statistics for a large dataset. I want to incorporate a script that will make frequent requests, with which I will be able to aggregate more statistics.

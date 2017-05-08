@@ -14,6 +14,8 @@ class Draw {
   }
 
   setAverages(player) {
+    const minutes = player.stats.maxTimePlayed;
+    player.stats.maxTimePlayed = (minutes / 60).toFixed(2);
     player.stats.kda = ((player.stats.totalChampionKills + player.stats.totalAssists) / player.stats.totalDeathsPerSession).toFixed(2);
     player.stats.avgDamageDealt = (player.stats.totalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgMinionKills = (player.stats.totalMinionKills / player.stats.totalSessionsPlayed).toFixed(2);
@@ -44,6 +46,8 @@ class Draw {
       const yAx = $y.find(":selected").val();
       this.render(xAx, yAx);
     });
+
+    $('button').click((e) => this.autoAxis());
   }
 
   renderPlayer(player) {
@@ -54,6 +58,20 @@ class Draw {
     const yAx = $("#y-axis").find(":selected").val();
     this.render(xAx, yAx);
 
+  }
+
+  autoAxis(axis) {
+    const xAxis = $('#x-axis').children();
+    const yAxis = $('#y-axis').find(":selected").val();
+    xAxis.each((i, item) => {
+      if (item.value !== "-- select data --") {
+        let interval = 1000;
+        setTimeout(() => {
+          this.render(item.value, yAxis);
+          interval += 1000;
+        }, interval);
+      }
+    });
   }
 
 
@@ -111,11 +129,11 @@ class Draw {
         .data(this.list)
       .enter().append('circle')
         .attr("r", (d) => {
-          // debugger
+
           if (!d.rank) {
-            // debugger
+
             return 20;
-            // debugger
+
           }
           return Math.sqrt(d.rank / 3);
         })
@@ -124,28 +142,21 @@ class Draw {
         .style("fill", (d) => d.color)
         .attr("class", (d) => {
           if (!d.rank) {
-            // debugger
+
             return "player-circle";
           }
           return "circle";
         })
-        // .style("fill", () => "hsl(" + Math.random() * 360 + ",100%,50%)"
+
         .on("mouseover", (d) => {
           tooltip.transition()
             .duration(200)
             .style("opacity", .9)
-            // .style("background-color", "black")
-          // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
+
           tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
               .style("left", "50vw")
               .style("top", "75vh")
-          //     .append("div")
-          //     .html("sdfdf")
-              // .style("left", (d3.event.pageX + 30) + "px")
-              // .style("top", (d3.event.pageY - 28) + "px");
-              // .style("left", "780px")
-              // .style("top", "570px")
         })
         .on("mouseout", (d) => {
           tooltip.transition()
@@ -177,137 +188,6 @@ class Draw {
       .attr("class", "axis-label")
       .style("text-anchor", "middle")
       .text(`${labels[yKey]}`);
-
-
-
-
-    // debugger
- //    var margin = {top: 20, right: 20, bottom: 30, left: 40},
- //    width = 960 - margin.left - margin.right,
- //    height = 500 - margin.top - margin.bottom;
- //
- //    //setup x
- //    const xValue = (d) => d.stats.totalChampionKills;
- //    // debugger
- //    const xScale = d3.scaleLinear().range([0, width]);
- //    const xMap = (d) => {
- //      // debugger
- //      return xScale(xValue(d));
- //    };
- //    // debugger
- //    const xAxis = d3.axisBottom(xScale);
- //
- //    //setup y
- //    const yValue = (d) => d.stats.maxTimePlayed;
- //    const yScale = d3.scaleLinear().range([height, 0]);
- //    const yMap = (d) => {
- //      // debugger
- //      yScale(yValue(d));
- //    };
- //    const yAxis = d3.axisLeft(yScale);
- //
- //    //setup fill color
- //
- //    // var cValue = function(d) { return d.Manufacturer;},
- //    // color = d3.scale.category10();
- //
- //    //add graph canvas to page
- //
- //    var svg = d3.select("body").append("svg")
- //        .attr("width", width + margin.left + margin.right)
- //        .attr("height", height + margin.top + margin.bottom)
- //      .append("g")
- //        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
- //
- //
- //        var tooltip = d3.select("body").append("div")
- //        .attr("class", "tooltip")
- //        .style("opacity", 0);
- //
- //
- //      this.list.forEach(function(d) {
- //        d.stats.totalChampionKills = +d.stats.totalChampionKills;
- //        d.stats.maxTimePayed = +d.stats.maxTimePayed;
- //    //    console.log(d);
- //      });
- //
- //
- //
- //    // don't want dots overlapping axis, so add in buffer to data domain
- //    xScale.domain([d3.min(this.list, xValue)-1, d3.max(this.list, xValue)+1]);
- //    yScale.domain([d3.min(this.list, yValue)-1, d3.max(this.list, yValue)+1]);
- //
- //    // x-axis
- //  svg.append("g")
- //      .attr("class", "x axis")
- //      .attr("transform", "translate(0," + height + ")")
- //      .call(xAxis)
- //    .append("text")
- //      .attr("class", "label")
- //      .attr("x", width)
- //      .attr("y", -6)
- //      .style("text-anchor", "end")
- //      .text("Total Damage Dealt");
- //
- //  // y-axis
- //  svg.append("g")
- //      .attr("class", "y axis")
- //      .call(yAxis)
- //    .append("text")
- //      .attr("class", "label")
- //      .attr("transform", "rotate(-90)")
- //      .attr("y", 6)
- //      .attr("dy", ".71em")
- //      .style("text-anchor", "end")
- //      .text("Max time played");
- //
- //
- //
- //
- //
- //      // draw dots
- //      // debugger
- //      svg.selectAll(".dot")
- //          .data(this.list)
- //        .enter().append("circle")
- //          .attr("class", "dot")
- //          .attr("r", 3.5)
- //          .attr("cx", xMap)
- //          .attr("cy", yMap)
- //
- //          .on("mouseover", function(d) {
- //              tooltip.transition()
- //                   .duration(200)
- //                   .style("opacity", .9);
- //              tooltip.html("cool" + "<br/> (" + xValue(d)
- //    	        + ", " + yValue(d) + ")")
- //                   .style("left", (d3.event.pageX + 5) + "px")
- //                   .style("top", (d3.event.pageY - 28) + "px");
- //          })
- //          .on("mouseout", function(d) {
- //              tooltip.transition()
- //                   .duration(500)
- //                   .style("opacity", 0);
- //          });
- //
- //          var legend = svg.selectAll(".legend")
- //
- //     .enter().append("g")
- //       .attr("class", "legend")
- //       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
- //       legend.append("rect")
- //     .attr("x", width - 18)
- //     .attr("width", 18)
- //     .attr("height", 18)
- //
- //
- // // draw legend text
- // legend.append("text")
- //     .attr("x", width - 24)
- //     .attr("y", 9)
- //     .attr("dy", ".35em")
- //     .style("text-anchor", "end")
- //    //  .text(function(d) { return d;})
 
 
   }
