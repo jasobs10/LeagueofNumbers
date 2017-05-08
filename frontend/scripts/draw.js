@@ -9,10 +9,7 @@ class Draw {
   setAttributes() {
     this.list.forEach((el) => {
       el.color = '#' + Math.floor(Math.random()*16777215).toString(16);
-
       this.setAverages(el);
-
-
     });
   }
 
@@ -25,10 +22,6 @@ class Draw {
     player.stats.avgGoldEarned = (player.stats.totalGoldEarned / player.stats.totalSessionsPlayed).toFixed(2);
 
   }
-
-  // mapCoordinates() {
-  //
-  // }
 
   addOptions(x, y) {
     const $x = $('#x-axis');
@@ -57,10 +50,8 @@ class Draw {
     this.setAverages(player);
     this.list.push(player);
 
-    console.log(this.list)
-    console.log(player)
-    const xAx = $("x-axis").find(":selected").val();
-    const yAx = $("y-axis").find(":selected").val();
+    const xAx = $("#x-axis").find(":selected").val();
+    const yAx = $("#y-axis").find(":selected").val();
     this.render(xAx, yAx);
 
   }
@@ -136,6 +127,7 @@ class Draw {
             // debugger
             return "player-circle";
           }
+          return "circle";
         })
         // .style("fill", () => "hsl(" + Math.random() * 360 + ",100%,50%)"
         .on("mouseover", (d) => {
@@ -163,6 +155,7 @@ class Draw {
 
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
+        .attr("class", "axis-line")
         .call(d3.axisBottom(x));
     svg.append("text")
       .attr("transform",
@@ -173,7 +166,8 @@ class Draw {
       .text(`${labels[xKey]}`);
 
     svg.append("g")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y))
+        .attr("class", "axis-line");
 
     svg.append("text")
       .attr("transform", "rotate(-90)")
@@ -315,18 +309,6 @@ class Draw {
  //     .style("text-anchor", "end")
  //    //  .text(function(d) { return d;})
 
-
-  }
-
-  renderData(data) {
-
-  }
-
-  addAxes(x, y) {
-
-  }
-
-  clearChart() {
 
   }
 
