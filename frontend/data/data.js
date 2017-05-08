@@ -8,6 +8,7 @@ class Data {
   constructor() {
 
     this.challengerList = "";
+    this.draw = new Draw();
   }
   fetchChallengers(xArg, yArg) {
     //
@@ -25,15 +26,28 @@ class Data {
       APIUTIL.fetchChallengerMatchesJson().then((r) => {
         console.log(r.length)
         this.challengerList = r;
-        const draw = new Draw(this.challengerList);
-        draw.addOptions();
-        draw.render(xArg, yArg);
-        // APIUTIL.fetchSummonerByName("Just Katarina").then((r) => console.log(r));
+
+        this.draw.list = this.challengerList;
+        this.draw.setAttributes();
+        this.draw.addOptions();
+        this.draw.render(xArg, yArg);
+
       });
-    // });
   }
 
 
+  addPlayerInput() {
+    $('.playerinput').submit((e) => {
+      e.preventDefault();
+      const name = $(e.target).find("input").val();
+      // debugger
+      APIUTIL.fetchSummonerByName(name).then((r) => {
+        this.draw.renderPlayer(r);
+
+      });
+    });
+
+  }
 
 }
 

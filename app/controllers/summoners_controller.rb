@@ -12,10 +12,10 @@ class SummonersController < ApplicationController
       matches =  Net::HTTP.get(URI.parse("https://na.api.riotgames.com/api/lol/NA/v1.3/stats/by-summoner/#{sum_id}/ranked?season=SEASON2017&api_key=#{key}"))
       matches2 = JSON.parse(matches).entries
       hash = {}
-      hash[sum_id] = matches2[2][1].select { |x| x["id"] == 0 }.last
-      hash[sum_id]["name"] = name
-      hash[sum_id]["sum_id"] = sum_id
-      hash[sum_id]["rank"] = "N/A"
+      hash = matches2[2][1].select { |x| x["id"] == 0 }.last
+      hash["name"] = name
+      hash["sum_id"] = sum_id
+      hash["rank"] = "N/A"
 
 
       # debugx/ger

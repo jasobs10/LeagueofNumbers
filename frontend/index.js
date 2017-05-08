@@ -5,16 +5,8 @@ import Data from './data/data';
 
 $(() => {
   // let challengersArray;
-  $('.playerinput').submit((e) => {
-    e.preventDefault();
-    const name = $(e.target).find("input").val();
-    // debugger
-    APIUTIL.fetchSummonerByName(name).then((r) => {
-      
-    });
-  });
-
   let a = new Data();
+  a.addPlayerInput()
   a.fetchChallengers()
 
 

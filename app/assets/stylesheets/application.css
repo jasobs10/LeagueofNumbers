@@ -101,7 +101,7 @@ button,
 
   h2 {
     font-size: 20px;
-    
+
   }
 
   .dropdowns {
@@ -191,8 +191,37 @@ button,
    width: 200px;
    height: 28px;
    pointer-events: none;
+   background-color: rgba(0,0,0, .5);
+   color: white;
+   width: 20%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding: .5% 1%;
+   border-radius: 5px;
+
  }
 
  .axis-label {
    font-size: 20px;
+ }
+
+ .player-circle {
+    stroke: red;
+    stroke-width: 3;
+    fill: yellow;
+
+ }
+
+ /*.tooltip-show {
+   background-color: rgba(0,0,0, .5);
+   color: white;
+   width: 20%;
+   text-align: center;
+   display: flex;
+
+ }*/
+
+ h3 {
+   font-size: 18px;
  }

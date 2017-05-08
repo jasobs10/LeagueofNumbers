@@ -15,12 +15,10 @@ export const labels = {
   "totalPentaKills": "Total Penta Kills",
   "totalDeathsPerSession": "Total Deaths",
   "totalGoldEarned": "Total Gold Earned",
-  "mostSpellsCast": "Most Spells Cast",
   "totalTurretsKilled": "Total Turrets Killed",
   "totalPhysicalDamageDealt": "Total Physical Damage Dealt",
   "totalMagicDamageDealt": "Total Magic Damage Dealth",
   "totalNeutralMinionsKilled": "Total Neutral Minions Killed",
-  "totalFirstBlood": "Total First Bloods",
   "totalAssists": "Total Assists",
   "totalHeal": "Total Healing Done",
   "maxLargestKillingSpree": "Largest Killing Spree",
@@ -29,8 +27,5 @@ export const labels = {
   "maxNumDeaths": "Number of Deaths",
   "maxTimePlayed": "Hours Played This Season",
   "maxTimeSpentLiving": "Time Spent Living",
-  "normalGamesPlayed": "Number of Normals Played",
-  "rankedSoloGamesPlayed": "Number of Ranked Solo Played",
-  "rankedPremadeGamesPlayed": "Number of Ranked Premade Played",
   "kda": "Kill/Deaths/Assists Ratio"
 };

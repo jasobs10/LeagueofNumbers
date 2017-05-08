@@ -1,9 +1,19 @@
 import {labels} from './helper';
 
 class Draw {
-  constructor(list) {
+  constructor() {
 
-    this.list = list;
+    this.list = "";
+  }
+
+  setAttributes() {
+    this.list.forEach((el) => {
+      el.color = '#' + Math.floor(Math.random()*16777215).toString(16);
+      el.averages = {};
+      el.averages.kda = (el.stats.totalChampionKills + el.stats.totalAssists) / el.stats.totalDeathsPerSession;
+      el.averages.damageDealt = (el.stats.totalDamageDealt / el.stats.totalSessionsPlayed);
+
+    });
   }
 
   // mapCoordinates() {
@@ -16,8 +26,10 @@ class Draw {
     $x.append("<option disabled selected> -- select data -- </option>");
     $y.append("<option disabled selected> -- select data -- </option>");
     Object.keys(labels).forEach((el) => {
-      $x.append(`<option value=${el}>${labels[el]}</option>`);
-      $y.append(`<option value=${el}>${labels[el]}</option>`);
+      if (el !== "name") {
+        $x.append(`<option value=${el}>${labels[el]}</option>`);
+        $y.append(`<option value=${el}>${labels[el]}</option>`);
+      }
     });
     $x.change((e) => {
 
@@ -31,8 +43,14 @@ class Draw {
     });
   }
 
-  renderPlayer(data) {
-    
+  renderPlayer(player) {
+    this.list.push(player);
+    console.log(this.list)
+    console.log(player)
+    const xAx = $("x-axis").find(":selected").val();
+    const yAx = $("y-axis").find(":selected").val();
+    this.render(xAx, yAx);
+
   }
 
 
@@ -47,6 +65,9 @@ class Draw {
       xKey = "maxTimePlayed";
       yKey = "totalChampionKills";
     }
+
+    $(`#x-axis option[value=${xKey}]`).prop('selected', true);
+    $(`#y-axis option[value=${yKey}]`).prop('selected', true);
 
     // add a function to calculate the data i need.  For kda, do if xKey or yKey === kda, then change it
     const margin = {top: 30, right: 20, bottom: 30, left: 65},
@@ -67,6 +88,10 @@ class Draw {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
+    tooltip.append("h1");
+    tooltip.append("article");
+    tooltip.append("article");
+
 
     // use + to change to integer
     this.list.forEach((d) => {
@@ -82,20 +107,40 @@ class Draw {
     svg.selectAll('dot')
         .data(this.list)
       .enter().append('circle')
-        // .attr("r", 5)
-        .attr("r", (d) => Math.sqrt(d.rank / 3))
+        .attr("r", (d) => {
+          // debugger
+          if (!d.rank) {
+            // debugger
+            return 20;
+            // debugger
+          }
+          return Math.sqrt(d.rank / 3);
+        })
         .attr("cx", (d) => x(d.stats[xKey]))
         .attr("cy", (d) => y(d.stats[yKey]))
-        .style("fill", () => '#' + Math.floor(Math.random()*16777215).toString(16))
+        .style("fill", (d) => d.color)
+        .attr("class", (d) => {
+          if (!d.rank) {
+            // debugger
+            return "player-circle";
+          }
+        })
         // .style("fill", () => "hsl(" + Math.random() * 360 + ",100%,50%)"
         .on("mouseover", (d) => {
           tooltip.transition()
             .duration(200)
             .style("opacity", .9)
             // .style("background-color", "black")
-          tooltip.html(d.name + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
-              .style("left", (d3.event.pageX + 5) + "px")
-              .style("top", (d3.event.pageY - 28) + "px");
+          tooltip.html(`<h3>Summoner: ${d.name}</h3>` + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
+          // tooltip.exit().remove()
+              .style("left", "770px")
+              .style("top", "570px")
+          //     .append("div")
+          //     .html("sdfdf")
+              // .style("left", (d3.event.pageX + 30) + "px")
+              // .style("top", (d3.event.pageY - 28) + "px");
+              // .style("left", "780px")
+              // .style("top", "570px")
         })
         .on("mouseout", (d) => {
           tooltip.transition()
@@ -125,6 +170,7 @@ class Draw {
       .attr("class", "axis-label")
       .style("text-anchor", "middle")
       .text(`${labels[yKey]}`);
+
 
 
 
