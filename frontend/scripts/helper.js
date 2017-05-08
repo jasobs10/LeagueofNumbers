@@ -27,5 +27,10 @@ export const labels = {
   "maxNumDeaths": "Number of Deaths",
   "maxTimePlayed": "Hours Played This Season",
   "maxTimeSpentLiving": "Time Spent Living",
-  "kda": "Kill/Deaths/Assists Ratio"
+  'kda': "Kills/Deaths/Assists Ratio",
+  'avgDamageDealt': "Average Damage Dealt",
+  'avgMinionKills': "Average Minion Kills",
+  'avgDamageTaken': "Average Damage Taken",
+  'avgDeaths': "Average Deaths",
+  'avgGoldEarned': "Average Gold Earned"
 };

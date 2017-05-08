@@ -188,8 +188,8 @@ button,
 
  .tooltip {
    position: absolute;
-   width: 200px;
-   height: 28px;
+   /*width: 200px;
+   height: 28px;*/
    pointer-events: none;
    background-color: rgba(0,0,0, .5);
    color: white;
@@ -224,4 +224,8 @@ button,
 
  h3 {
    font-size: 18px;
+ }
+
+ article {
+   font-size: 15px;
  }

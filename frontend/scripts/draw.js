@@ -9,11 +9,21 @@ class Draw {
   setAttributes() {
     this.list.forEach((el) => {
       el.color = '#' + Math.floor(Math.random()*16777215).toString(16);
-      el.averages = {};
-      el.averages.kda = (el.stats.totalChampionKills + el.stats.totalAssists) / el.stats.totalDeathsPerSession;
-      el.averages.damageDealt = (el.stats.totalDamageDealt / el.stats.totalSessionsPlayed);
+
+      this.setAverages(el);
+
 
     });
+  }
+
+  setAverages(player) {
+    player.stats.kda = ((player.stats.totalChampionKills + player.stats.totalAssists) / player.stats.totalDeathsPerSession).toFixed(2);
+    player.stats.avgDamageDealt = (player.stats.totalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgMinionKills = (player.stats.totalMinionKills / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgDamageTaken = (player.stats.totalDamageTaken / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgDeaths = (player.stats.totalDeathsPerSession / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgGoldEarned = (player.stats.totalGoldEarned / player.stats.totalSessionsPlayed).toFixed(2);
+
   }
 
   // mapCoordinates() {
@@ -44,7 +54,9 @@ class Draw {
   }
 
   renderPlayer(player) {
+    this.setAverages(player);
     this.list.push(player);
+
     console.log(this.list)
     console.log(player)
     const xAx = $("x-axis").find(":selected").val();
@@ -131,9 +143,10 @@ class Draw {
             .duration(200)
             .style("opacity", .9)
             // .style("background-color", "black")
-          tooltip.html(`<h3>Summoner: ${d.name}</h3>` + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
+          // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + "<br /> (" + d.stats[xKey] + ", " + d.stats[yKey] + ")")
+          tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
-              .style("left", "770px")
+              .style("left", "760px")
               .style("top", "570px")
           //     .append("div")
           //     .html("sdfdf")
