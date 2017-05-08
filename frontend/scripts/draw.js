@@ -26,6 +26,7 @@ class Draw {
   }
 
   addOptions(x, y) {
+
     const $x = $('#x-axis');
     const $y = $('#y-axis');
     $x.append("<option disabled selected> -- select data -- </option>");
@@ -48,10 +49,17 @@ class Draw {
       this.render(options);
     });
 
-    $('button').click((e) => {
+    $('button').click(this.handleClick.bind(this));
+  }
 
-      this.autoAxis(e.target.innerText)
-    });
+  handleClick(e) {
+    if (e.target.innerText === "STOP") {
+      e.currentTarget.classList.remove("stop");
+      e.currentTarget.innerText = "Y";
+      clearInterval(this.interval);
+    } else {
+      this.autoAxis(e.target.innerText);
+    }
   }
 
   renderPlayer(player) {
@@ -76,34 +84,38 @@ class Draw {
       staticAxis = $('#y-axis').find(":selected").val();
       // options.x = loopAxis;
       options.y = staticAxis;
-    } else {
+      $('.x-button').html("STOP").addClass("stop");
+    } else if (axis === "Y") {
 
       loopAxis = $('#y-axis').children();
       staticAxis = $('#x-axis').find(":selected").val();
       options.x = staticAxis;
       // options.y = loopAxis;
+      $('.y-button').html("STOP").addClass("stop");
     }
     const loop = axis;
     const size = loopAxis.size();
     let i = 0;
-    let interval = setInterval(() => {
+    this.interval = setInterval(() => {
       // if (i < size) {
         // debugger
       if (loopAxis[i % size].value !== "-- select data --") {
         if (loop === "X") {
           options.x = loopAxis[i % size].value;
+
         } else {
-          // debugger
+
           options.y = loopAxis[i % size].value;
+
         }
-        // debugger
+
         this.render(options);
       }
         i += 1;
       // } else {
       //   clearInterval(interval);
       // }
-    }, 300);
+    }, 250);
 
   }
 
@@ -193,7 +205,7 @@ class Draw {
           tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
               .style("left", "45vw")
-              .style("top", "75vh")
+              .style("top", "75vh");
         })
         .on("mouseout", (d) => {
           tooltip.transition()
