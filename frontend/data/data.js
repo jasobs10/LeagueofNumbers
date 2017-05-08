@@ -24,7 +24,7 @@ class Data {
 
       // APIUTIL.fetchChallengerMatches().then((r) => console.log(r));
       APIUTIL.fetchChallengerMatchesJson().then((r) => {
-        console.log(r.length)
+        // console.log(r.length)
         this.challengerList = r;
 
         this.draw.list = this.challengerList;
