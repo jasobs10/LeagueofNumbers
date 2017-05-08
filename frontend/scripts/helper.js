@@ -32,5 +32,7 @@ export const labels = {
   'avgMinionKills': "Average Minion Kills",
   'avgDamageTaken': "Average Damage Taken",
   'avgDeaths': "Average Deaths",
-  'avgGoldEarned': "Average Gold Earned"
+  'avgGoldEarned': "Average Gold Earned",
+  'avgKills': "Average Kills",
+  "avgAssists": "Average Assists"
 };

@@ -22,6 +22,8 @@ class Draw {
     player.stats.avgDamageTaken = (player.stats.totalDamageTaken / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgDeaths = (player.stats.totalDeathsPerSession / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgGoldEarned = (player.stats.totalGoldEarned / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgKills = (player.stats.totalChampionKills / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgAssists = (player.stats.totalAssists / player.stats.totalSessionsPlayed).toFixed(2);
 
   }
 
@@ -119,6 +121,10 @@ class Draw {
 
   }
 
+  renderPie(data) {
+
+  }
+
 
 
   render(options = {}) {
@@ -155,9 +161,9 @@ class Draw {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    tooltip.append("h1");
-    tooltip.append("article");
-    tooltip.append("article");
+    // tooltip.append("h1");
+    // tooltip.append("article");
+    // tooltip.append("article");
 
 
     // use + to change to integer
@@ -198,12 +204,24 @@ class Draw {
         })
 
         .on("mouseover", (d) => {
+          const playerData = [];
+          playerData.push({"name": d.name});
+          playerData.push({"rank": d.rank});
+          Object.keys(d.stats).forEach((key) => {
+            playerData.push({[key]: d.stats[key]});
+            // debugger
+          });
+
+          debugger
           tooltip.transition()
             .duration(200)
             .style("opacity", .9)
 
-          tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
+            //call draw function for new thing
+
+          // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
+          tooltip.enter()
               .style("left", "45vw")
               .style("top", "75vh");
         })
