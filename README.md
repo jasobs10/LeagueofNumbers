@@ -17,8 +17,7 @@ League of Numbers is a tool to visualize statistics of the top 200 players of th
 
 Data for the top ranked players is prefetched through multiple calls to the Riot Games API. Statistics for each top ranked player is aggregated on the front-end. Users can input a player name into the input box, and data for that specific player will be returned, aggregated and rendered.
 
-Because the Riot Games API does not allow for front-end AJAX request, API requests are handled by the `SummonersController` and `ChallengersController`.
-An API is called to the respective controller, which returns the data from the HTTP request.
+Because the Riot Games API does not allow for front-end AJAX request, API requests are handled by the `SummonersController` and `ChallengersController` on the Rails backend. AJAX requests are called to the respective controller, which returns the data from the HTTP request.
 
 ### Visualization
 
