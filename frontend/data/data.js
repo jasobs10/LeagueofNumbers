@@ -30,7 +30,8 @@ class Data {
         this.draw.list = this.challengerList;
         this.draw.setAttributes();
         this.draw.addOptions();
-        this.draw.render(xArg, yArg);
+        const options = {"x": xArg, "y": yArg};
+        this.draw.render(options);
 
       });
   }

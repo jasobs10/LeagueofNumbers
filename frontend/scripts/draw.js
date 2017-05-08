@@ -44,10 +44,14 @@ class Draw {
       e.preventDefault();
       const xAx = $x.find(":selected").val();
       const yAx = $y.find(":selected").val();
-      this.render(xAx, yAx);
+      const options = {"x": xAx, "y": yAx};
+      this.render(options);
     });
 
-    $('button').click((e) => this.autoAxis());
+    $('button').click((e) => {
+
+      this.autoAxis(e.target.innerText)
+    });
   }
 
   renderPlayer(player) {
@@ -56,32 +60,62 @@ class Draw {
 
     const xAx = $("#x-axis").find(":selected").val();
     const yAx = $("#y-axis").find(":selected").val();
-    this.render(xAx, yAx);
+    const options = {"x": xAx, "y": yAx};
+    this.render(options);
 
   }
 
   autoAxis(axis) {
-    const xAxis = $('#x-axis').children();
-    const yAxis = $('#y-axis').find(":selected").val();
-    xAxis.each((i, item) => {
-      if (item.value !== "-- select data --") {
-        let interval = 1000;
-        setTimeout(() => {
-          this.render(item.value, yAxis);
-          interval += 1000;
-        }, interval);
+    let options = {};
+    let loopAxis;
+    let staticAxis;
+    // debugger
+    if (axis === "X") {
+      // debugger
+      loopAxis = $('#x-axis').children();
+      staticAxis = $('#y-axis').find(":selected").val();
+      // options.x = loopAxis;
+      options.y = staticAxis;
+    } else {
+
+      loopAxis = $('#y-axis').children();
+      staticAxis = $('#x-axis').find(":selected").val();
+      options.x = staticAxis;
+      // options.y = loopAxis;
+    }
+    const loop = axis;
+    const size = loopAxis.size();
+    let i = 0;
+    let interval = setInterval(() => {
+      // if (i < size) {
+        // debugger
+      if (loopAxis[i % size].value !== "-- select data --") {
+        if (loop === "X") {
+          options.x = loopAxis[i % size].value;
+        } else {
+          // debugger
+          options.y = loopAxis[i % size].value;
+        }
+        // debugger
+        this.render(options);
       }
-    });
+        i += 1;
+      // } else {
+      //   clearInterval(interval);
+      // }
+    }, 300);
+
   }
 
 
 
-  render(xArg, yArg) {
+  render(options = {}) {
     let xKey;
     let yKey;
-    if (xArg && yArg) {
-      xKey = xArg;
-      yKey = yArg;
+    // debugger
+    if (options.x && options.y) {
+      xKey = options.x;
+      yKey = options.y;
     } else {
       xKey = "maxTimePlayed";
       yKey = "totalChampionKills";
@@ -126,6 +160,9 @@ class Draw {
     y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
 
     svg.selectAll('dot')
+        // .data(this.list, (d) => {
+        //   //unique identifier of each piece of data
+        // });
         .data(this.list)
       .enter().append('circle')
         .attr("r", (d) => {
@@ -155,7 +192,7 @@ class Draw {
 
           tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
-              .style("left", "50vw")
+              .style("left", "45vw")
               .style("top", "75vh")
         })
         .on("mouseout", (d) => {
