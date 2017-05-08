@@ -56,8 +56,9 @@ class Draw {
 
   handleClick(e) {
     if (e.target.innerText === "STOP") {
+      // debugger
       e.currentTarget.classList.remove("stop");
-      e.currentTarget.innerText = "Y";
+      e.currentTarget.innerText = (e.target.className === "submit x-button") ? "X" : "Y";
       clearInterval(this.interval);
     } else {
       this.autoAxis(e.target.innerText);
@@ -122,7 +123,50 @@ class Draw {
   }
 
   renderPie(data) {
+    // var data2 = [10, 20, 100];
 
+    var width = 960,
+        height = 500,
+        radius = Math.min(width, height) / 2;
+
+    var color = d3.scaleOrdinal()
+        .range(["#98abc5", "#8a89a6", "#7b6888"]);
+
+    var arc = d3.arc()
+        .outerRadius(radius - 10)
+        .innerRadius(0);
+
+    var labelArc = d3.arc()
+        .outerRadius(radius - 40)
+        .innerRadius(radius - 40);
+
+    var pie = d3.pie()
+        .sort(null)
+        .value(function(d) { return d.value; });
+    d3.select(".piesvg").remove();
+    var svg = d3.select(".piechart").append("svg")
+        .attr("class", "piesvg")
+        .attr("width", width)
+        .attr("height", height)
+      .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+      var g = svg.selectAll(".arc")
+          .data(pie(data))
+        .enter().append("g")
+          .attr("class", "arc");
+
+      g.append("path")
+          .attr("d", arc)
+          .style("fill", function(d) { return color(d.data.value); });
+
+      g.append("text")
+          .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+          .attr("dy", ".35em")
+          .text(function(d) {
+            // debugger
+            return d.data.label;
+          });
   }
 
 
@@ -205,14 +249,18 @@ class Draw {
 
         .on("mouseover", (d) => {
           const playerData = [];
-          playerData.push({"name": d.name});
-          playerData.push({"rank": d.rank});
-          Object.keys(d.stats).forEach((key) => {
-            playerData.push({[key]: d.stats[key]});
-            // debugger
-          });
+          // playerData.push({"name": d.name});
+          // playerData.push({"rank": d.rank});
+          // Object.keys(d.stats).forEach((key) => {
+          //   playerData.push({[key]: d.stats[key]});
+          //   // debugger
+          // });
+          playerData.push({"label": "avgKills", "value": d.stats.avgKills});
+          playerData.push({"label": "avgAssists", "value": d.stats.avgAssists});
+          playerData.push({"label": "avgDeaths", "value": d.stats.avgDeaths});
 
-          debugger
+          this.renderPie(playerData);
+          // debugger
           tooltip.transition()
             .duration(200)
             .style("opacity", .9)
@@ -229,6 +277,7 @@ class Draw {
           tooltip.transition()
             .duration(500)
             .style("opacity", 0);
+
         });
 
     svg.append("g")

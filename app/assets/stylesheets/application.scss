@@ -334,3 +334,17 @@ button,
    background-color: rgb(207, 0, 0);
    color: white;
  }
+
+.piechart {
+  width: 100%;
+
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
