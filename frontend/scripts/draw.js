@@ -145,10 +145,23 @@ class Draw {
         height = 160,
         radius = Math.min(width, height) / 2;
 
-    let colors;
+    let colors = [];
+    switch (data[0].label) {
+      case "Avg Kills":
+        colors = ["#98abc5", "#8a89a6", "#7b6888"];
+        break;
+      case "Wins":
+        colors = ["#61c0d5", "#3b9c76"];
+        break;
+      case "Phys. Dmg":
+        colors = ["#e8c765", "#e89160"];
+        break;
+
+    }
+
 
     var color = d3.scaleOrdinal()
-        .range(["#98abc5", "#8a89a6", "#7b6888"]);
+        .range(colors);
 
     var arc = d3.arc()
         .outerRadius(radius - 10)
