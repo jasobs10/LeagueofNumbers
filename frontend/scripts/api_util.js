@@ -23,6 +23,15 @@ export const APIUTIL = {
     });
   },
 
+  fetchRandom: () => {
+    return $.ajax({
+      method: "GET",
+      url: `summoners`,
+      data: { random: true }
+
+    });
+  },
+
   fetchChallengers: () => {
     return $.getJSON('data/challengers.json', (data) => {
       // console.log(data);

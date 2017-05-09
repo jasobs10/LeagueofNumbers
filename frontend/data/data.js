@@ -54,6 +54,13 @@ class Data {
       });
     });
 
+    $('#random').click(() => {
+      // debugger
+      APIUTIL.fetchRandom().then((r) => {
+        this.draw.renderPlayer(r);
+      });
+    });
+
   }
 
 }
