@@ -4,10 +4,14 @@ import Data from './data/data';
 
 
 $(() => {
+  $('.tip-box').hide();
   // let challengersArray;
+  $('.question').mouseover(() => $('.tip-box').show(200));
+  $('.question').mouseout(() => $('.tip-box').hide());
+
   let a = new Data();
-  a.addPlayerInput()
-  a.fetchChallengers()
+  a.addPlayerInput();
+  a.fetchChallengers();
 
 
 
