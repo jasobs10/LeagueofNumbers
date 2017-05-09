@@ -270,14 +270,26 @@ button,
    pointer-events: none;
    background-color: rgba(255, 255, 255, 0.25);
    color: white;
-   width: 50%;
+   width: 500px;
    text-align: center;
    display: flex;
    flex-direction: column;
-   padding: .5% 1%;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
    border-radius: 5px;
 
  }
+
+ .tooltip-chart {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   align-items: center;
+ }
+
+
 
  .axis-label {
    font-size: 20px;
@@ -336,13 +348,24 @@ button,
  }
 
 .piechart {
-  width: 100%;
+  width: 80%;
 
 }
 
+// .piesvg {
+//   width: 140px;
+// }
+
+// .pietext {
+//   font-size: 13px;
+//   font-family: sans-serif;
+//   color: #d79922;
+// }
+
 .arc text {
-  font: 10px sans-serif;
+  font: 11px sans-serif;
   text-anchor: middle;
+
 }
 
 .arc path {

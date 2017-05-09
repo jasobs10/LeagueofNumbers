@@ -24,6 +24,8 @@ class Draw {
     player.stats.avgGoldEarned = (player.stats.totalGoldEarned / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgKills = (player.stats.totalChampionKills / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgAssists = (player.stats.totalAssists / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgMagicDamage = (player.stats.totalMagicDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
+    player.stats.avgPhysicalDamage = (player.stats.totalPhysicalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
 
   }
 
@@ -125,8 +127,8 @@ class Draw {
   renderPie(data) {
     // var data2 = [10, 20, 100];
 
-    var width = 300,
-        height = 180,
+    var width = 160,
+        height = 160,
         radius = Math.min(width, height) / 2;
 
     var color = d3.scaleOrdinal()
@@ -144,7 +146,7 @@ class Draw {
         .sort(null)
         .value(function(d) { return d.value; });
     // d3.select(".piesvg").remove();
-    var svg = d3.select(".tooltip").append("svg")
+    var svg = d3.select(".tooltip-chart").append("svg")
         .attr("class", "piesvg")
         .attr("width", width)
         .attr("height", height)
@@ -162,11 +164,19 @@ class Draw {
 
       g.append("text")
           .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-          .attr("dy", ".35em")
+          .attr("dy", "0em")
+          .attr("class", "pietext")
           .text(function(d) {
             // debugger
-            return d.data.label;
+            return (d.data.label);
           });
+
+      g.append("text")
+          .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+          .attr("dy", "1.2em")
+          .attr("class", "pietext")
+          .text((d) => `(${d.data.value})`);
+
   }
 
 
@@ -200,10 +210,18 @@ class Draw {
         .attr("height", height + margin.bottom + margin.top)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+    d3.select(".tooltip").remove();
     const tooltip = d3.select(".chart-container").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
+
+    tooltip.append("div")
+        .attr("class", "tooltip-header");
+
+    tooltip.append("div")
+        .attr("class", "tooltip-chart");
+
+
 
     // tooltip.append("h1");
     // tooltip.append("article");
@@ -249,31 +267,55 @@ class Draw {
 
         .on("mouseover", (d) => {
           const playerData = [];
+          const winData = [];
+          const damage = [];
           // playerData.push({"name": d.name});
           // playerData.push({"rank": d.rank});
           // Object.keys(d.stats).forEach((key) => {
           //   playerData.push({[key]: d.stats[key]});
           //   // debugger
           // });
-          playerData.push({"label": "avgKills", "value": d.stats.avgKills});
-          playerData.push({"label": "avgAssists", "value": d.stats.avgAssists});
-          playerData.push({"label": "avgDeaths", "value": d.stats.avgDeaths});
-          d3.select(".piesvg").remove();
-          this.renderPie(playerData);
+          playerData.push({"label": "Avg Kills", "value": d.stats.avgKills});
+          playerData.push({"label": "Avg Assists", "value": d.stats.avgAssists});
+          playerData.push({"label": "Avg Deaths", "value": d.stats.avgDeaths});
+
+          winData.push({"label": "Wins", "value": d.stats.totalSessionsWon});
+          winData.push({"label": "Losses", "value": d.stats.totalSessionsLost});
+
+          damage.push({"label": "Phys. Dmg", "value": d.stats.avgPhysicalDamage});
+          damage.push({"label": "Magic Dmg", "value": d.stats.avgMagicDamage});
+
           // debugger
+          d3.select(".piesvg").remove();
+          d3.select(".piesvg").remove();
+          d3.select(".piesvg").remove();
+          // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
+
+          this.renderPie(playerData);
+          this.renderPie(winData);
+          this.renderPie(damage);
+
           tooltip.transition()
             .duration(200)
             .style("opacity", .9)
 
             //call draw function for new thing
-
+          tooltip.select(".tooltip-header")
+            .html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
           // tooltip.enter()
               // .style("left", "45vw")
               // .style("top", "10vh");
+          let xLocation;
+          if (window.innerWidth * .67 < d3.event.pageX) {
+            xLocation = (d3.event.pageX - ($('.tooltip')[0].offsetWidth + 20));
+            // debugger
+          } else {
+            xLocation = (d3.event.pageX + 20);
+          }
             tooltip
-              .style("left", (d3.event.pageX + 20) + "px")
+              .style("left", (xLocation) + "px")
               .style("top", (d3.event.pageY - 50) + "px");
 
 

@@ -34,5 +34,7 @@ export const labels = {
   'avgDeaths': "Average Deaths",
   'avgGoldEarned': "Average Gold Earned",
   'avgKills': "Average Kills",
-  "avgAssists": "Average Assists"
+  "avgAssists": "Average Assists",
+  "avgPhysicalDamage": "Average Physical Damage Dealt",
+  "avgMagicDamage": "Average Magic Damage Dealt"
 };
