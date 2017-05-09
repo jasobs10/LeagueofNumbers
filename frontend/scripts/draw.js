@@ -12,6 +12,11 @@ class Draw {
       el.color = '#' + Math.floor(Math.random()*16777215).toString(16);
       this.setAverages(el);
     });
+
+    this.list.sort((a, b) => (b.rank - a.rank)).forEach((player, i) => {
+      player.ranking = i+1;
+    });
+    // debugger
   }
 
   setAverages(player) {
@@ -27,6 +32,8 @@ class Draw {
     player.stats.avgAssists = (player.stats.totalAssists / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgMagicDamage = (player.stats.totalMagicDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgPhysicalDamage = (player.stats.totalPhysicalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
+
+
 
   }
 
@@ -302,7 +309,7 @@ class Draw {
 
             //call draw function for new thing
           tooltip.select(".tooltip-header")
-            .html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
+            .html(`<h3>Summoner: ${d.name}</h3>` + `<article>Rank: ${d.ranking}</article>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
           // tooltip.enter()
@@ -365,7 +372,7 @@ class Draw {
     $('svg').find("circle").click((e) => {
       $(e.currentTarget).toggleClass("highlight-circle");
       // this.highlighted.push()
-      debugger
+      // debugger
     });
   }
 }
