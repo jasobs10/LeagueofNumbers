@@ -40,11 +40,17 @@ class Data {
   addPlayerInput() {
     $('.playerinput').submit((e) => {
       e.preventDefault();
+      $('#cssload-loader').show();
       const name = $(e.target).find("input").val();
       // debugger
       APIUTIL.fetchSummonerByName(name).then((r) => {
+        $('#cssload-loader').hide();
         this.draw.renderPlayer(r);
+        this.draw.hideError();
 
+      }, (e) => {
+        $('#cssload-loader').hide();
+        this.draw.renderError();
       });
     });
 

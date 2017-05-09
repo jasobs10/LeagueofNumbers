@@ -13,8 +13,13 @@ class Draw {
       this.setAverages(el);
     });
 
+
+
     this.list.sort((a, b) => (b.rank - a.rank)).forEach((player, i) => {
-      player.ranking = i+1;
+
+      if (player.rank) {
+        player.ranking = i+1;
+      }
     });
     // debugger
   }
@@ -32,6 +37,7 @@ class Draw {
     player.stats.avgAssists = (player.stats.totalAssists / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgMagicDamage = (player.stats.totalMagicDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgPhysicalDamage = (player.stats.totalPhysicalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
+    player.ranking = "N/A";
 
 
 
@@ -138,6 +144,8 @@ class Draw {
     var width = 160,
         height = 160,
         radius = Math.min(width, height) / 2;
+
+    let colors;
 
     var color = d3.scaleOrdinal()
         .range(["#98abc5", "#8a89a6", "#7b6888"]);
@@ -374,6 +382,14 @@ class Draw {
       // this.highlighted.push()
       // debugger
     });
+  }
+
+  renderError() {
+    $('.error').show();
+  }
+
+  hideError() {
+    $('.error').hide();
   }
 }
 
