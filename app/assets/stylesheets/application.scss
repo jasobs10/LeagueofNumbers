@@ -131,6 +131,7 @@ button,
 
   h1 {
     font-size: 25px;
+
   }
 
   h2 {
@@ -269,6 +270,7 @@ button,
    height: 28px;*/
    pointer-events: none;
    background-color: rgba(255, 255, 255, 0.25);
+  //  background-color: rgba(215, 153, 34, 0.74);
    color: white;
    width: 500px;
    text-align: center;
@@ -332,10 +334,17 @@ button,
 
  h3 {
    font-size: 18px;
+   font-weight: 800;
+   color: rgb(255, 188, 61);
  }
 
  article {
    font-size: 15px;
+   color: rgb(255, 188, 61);
+ }
+
+ h3, article {
+
  }
 
  .tick line {

@@ -308,7 +308,7 @@ class Draw {
               // .style("left", "45vw")
               // .style("top", "10vh");
           let xLocation;
-          if (window.innerWidth * .67 < d3.event.pageX) {
+          if ((window.innerWidth - 520) < d3.event.pageX) {
             xLocation = (d3.event.pageX - ($('.tooltip')[0].offsetWidth + 20));
             // debugger
           } else {
