@@ -4,6 +4,7 @@ class Draw {
   constructor() {
 
     this.list = "";
+    this.highlighted = [];
   }
 
   setAttributes() {
@@ -356,9 +357,18 @@ class Draw {
       .style("text-anchor", "middle")
       .text(`${labels[yKey]}`);
 
+      this.highlightClick();
 
   }
 
+  highlightClick() {
+    $('svg').find("circle").click((e) => {
+      $(e.currentTarget).toggleClass("highlight-circle");
+      // this.highlighted.push()
+      debugger
+    });
+  }
 }
+
 
 export default Draw;
