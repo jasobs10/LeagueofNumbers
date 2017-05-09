@@ -125,8 +125,8 @@ class Draw {
   renderPie(data) {
     // var data2 = [10, 20, 100];
 
-    var width = 960,
-        height = 500,
+    var width = 300,
+        height = 180,
         radius = Math.min(width, height) / 2;
 
     var color = d3.scaleOrdinal()
@@ -143,8 +143,8 @@ class Draw {
     var pie = d3.pie()
         .sort(null)
         .value(function(d) { return d.value; });
-    d3.select(".piesvg").remove();
-    var svg = d3.select(".piechart").append("svg")
+    // d3.select(".piesvg").remove();
+    var svg = d3.select(".tooltip").append("svg")
         .attr("class", "piesvg")
         .attr("width", width)
         .attr("height", height)
@@ -258,7 +258,7 @@ class Draw {
           playerData.push({"label": "avgKills", "value": d.stats.avgKills});
           playerData.push({"label": "avgAssists", "value": d.stats.avgAssists});
           playerData.push({"label": "avgDeaths", "value": d.stats.avgDeaths});
-
+          d3.select(".piesvg").remove();
           this.renderPie(playerData);
           // debugger
           tooltip.transition()
@@ -269,15 +269,24 @@ class Draw {
 
           // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
           // tooltip.exit().remove()
-          tooltip.enter()
-              .style("left", "45vw")
-              .style("top", "75vh");
+          // tooltip.enter()
+              // .style("left", "45vw")
+              // .style("top", "10vh");
+            tooltip
+              .style("left", (d3.event.pageX + 20) + "px")
+              .style("top", (d3.event.pageY - 50) + "px");
+
+
+
+
         })
         .on("mouseout", (d) => {
           tooltip.transition()
             .duration(500)
             .style("opacity", 0);
-
+            // d3.select(".piesvg").transition()
+            // .duration(500)
+            // .remove();
         });
 
     svg.append("g")
