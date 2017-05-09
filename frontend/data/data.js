@@ -56,8 +56,14 @@ class Data {
 
     $('#random').click(() => {
       // debugger
+      $('#cssload-loader').show();
       APIUTIL.fetchRandom().then((r) => {
+        $('#cssload-loader').hide();
         this.draw.renderPlayer(r);
+        this.draw.hideError();
+      }, (e) => {
+        $('#cssload-loader').hide();
+        this.draw.renderError();
       });
     });
 

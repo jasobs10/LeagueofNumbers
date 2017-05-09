@@ -6,7 +6,7 @@ import Data from './data/data';
 $(() => {
   $('.tip-box').hide();
   // let challengersArray;
-  $('.question').mouseover(() => $('.tip-box').show(200));
+  $('.question').mouseover(() => $('.tip-box').show());
   $('.question').mouseout(() => $('.tip-box').hide());
 
   let a = new Data();
