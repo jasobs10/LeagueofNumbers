@@ -235,10 +235,13 @@ class Draw {
     d3.select("svg").remove();
 
     const svg = d3.select(".chart-container").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.bottom + margin.top)
+        // .attr("width", width + margin.left + margin.right)
+        // .attr("height", height + margin.bottom + margin.top)
+        .attr("width", 800)
+        .attr("height", 580)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
     d3.select(".tooltip").remove();
     const tooltip = d3.select(".chart-container").append("div")
         .attr("class", "tooltip")
@@ -264,9 +267,16 @@ class Draw {
       d.rank = +d.rank;
     });
 
-    x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
+    var xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
+    xRange = xExtent[1] - xExtent[0],
+    yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
+    yRange = yExtent[1] - yExtent[0];
 
-    y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
+    // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
+    //
+    // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
+    x.domain([xExtent[0] - (xRange * .1), xExtent[1] + (xRange * .1)]);
+    y.domain([yExtent[0] - (yRange * .1), yExtent[1] + (yRange * .1)]);
 
     svg.selectAll('dot')
         // .data(this.list, (d) => {
@@ -364,10 +374,12 @@ class Draw {
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axis-line")
         .call(d3.axisBottom(x)
-          .tickFormat(d3.format(".0s")));
+          // .tickFormat(d3.format(".0s")));
+          .ticks(15, "s"));
     svg.append("text")
       .attr("transform",
-        "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
+        // "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
+        "translate(357.5, 530)")
       .attr("dx", "1em")
       .style("text-anchor", "middle")
       .attr("class", "axis-label")
@@ -375,7 +387,9 @@ class Draw {
 
     svg.append("g")
         .call(d3.axisLeft(y)
-          .tickFormat(d3.format(".0s")))
+          .ticks(15, "s"))
+
+          // .tickFormat(d3.format(".0s")))
         .attr("class", "axis-line");
 
 
