@@ -363,7 +363,8 @@ class Draw {
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axis-line")
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x)
+          .tickFormat(d3.format(".0s")));
     svg.append("text")
       .attr("transform",
         "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
@@ -373,8 +374,10 @@ class Draw {
       .text(`${labels[xKey]}`);
 
     svg.append("g")
-        .call(d3.axisLeft(y))
+        .call(d3.axisLeft(y)
+          .tickFormat(d3.format(".0s")))
         .attr("class", "axis-line");
+
 
     svg.append("text")
       .attr("transform", "rotate(-90)")
