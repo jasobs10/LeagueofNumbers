@@ -21,7 +21,7 @@ class Draw {
         player.ranking = i+1;
       }
     });
-    // debugger
+
   }
 
   setAverages(player) {
@@ -38,8 +38,6 @@ class Draw {
     player.stats.avgMagicDamage = (player.stats.totalMagicDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
     player.stats.avgPhysicalDamage = (player.stats.totalPhysicalDamageDealt / player.stats.totalSessionsPlayed).toFixed(2);
     player.ranking = "N/A";
-
-
 
   }
 
@@ -73,7 +71,7 @@ class Draw {
 
   handleClick(e) {
     if (e.target.innerText === "STOP") {
-      // debugger
+
       e.currentTarget.classList.remove("stop");
       e.currentTarget.innerText = (e.target.className === "submit x-button") ? "X" : "Y";
       clearInterval(this.interval);
@@ -97,17 +95,17 @@ class Draw {
     let options = {};
     let loopAxis;
     let staticAxis;
-    // debugger
+
     if (axis === "X") {
-      // debugger
-      loopAxis = $('#x-axis').children();
+
+      loopAxis = $('#x-axis').children().slice(1);
       staticAxis = $('#y-axis').find(":selected").val();
       // options.x = loopAxis;
       options.y = staticAxis;
       $('.x-button').html("STOP").addClass("stop");
     } else if (axis === "Y") {
 
-      loopAxis = $('#y-axis').children();
+      loopAxis = $('#y-axis').children().slice(1);
       staticAxis = $('#x-axis').find(":selected").val();
       options.x = staticAxis;
       // options.y = loopAxis;
@@ -117,33 +115,24 @@ class Draw {
     const size = loopAxis.size();
     let i = 0;
     this.interval = setInterval(() => {
-      // if (i < size) {
-        // debugger
-      if (loopAxis[i % size].value !== "-- select data --") {
-        if (loop === "X") {
-          options.x = loopAxis[i % size].value;
-
-        } else {
-
-          options.y = loopAxis[i % size].value;
-
-        }
-
-        options.transition = 600;
-
-        this.update(options);
+      if (loop === "X") {
+        options.x = loopAxis[i % size].value;
+      } else {
+        options.y = loopAxis[i % size].value;
       }
-        i += 1;
-      // } else {
-      //   clearInterval(interval);
-      // }
-    }, 750);
 
+      options.transition = 600;
+
+      this.update(options);
+
+      i++;
+
+    }, 750);
   }
 
   renderPie(data) {
 
-    var width = 160,
+    const width = 160,
         height = 160,
         radius = Math.min(width, height) / 2;
 
@@ -162,35 +151,32 @@ class Draw {
     }
 
 
-    var color = d3.scaleOrdinal()
+    const color = d3.scaleOrdinal()
         .range(colors);
 
-    var arc = d3.arc()
+    const arc = d3.arc()
         .outerRadius(radius - 10)
         .innerRadius(0);
 
-    var labelArc = d3.arc()
+    const labelArc = d3.arc()
         .outerRadius(radius - 40)
         .innerRadius(radius - 40);
 
-    var pie = d3.pie()
+    const pie = d3.pie()
         .sort(null)
         .value(function(d) { return d.value; });
 
-    var svg = d3.select(".tooltip-chart").append("svg")
+    const svg = d3.select(".tooltip-chart").append("svg")
         .attr("class", "piesvg")
         .attr("width", width)
         .attr("height", height)
       .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-      var g = svg.selectAll(".arc")
+      const g = svg.selectAll(".arc")
           .data(pie(data))
         .enter().append("g")
-
           .attr("class", "arc");
-
-
 
       g.append("path")
           .attr("d", arc)
@@ -200,8 +186,7 @@ class Draw {
           .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
           .attr("dy", "0em")
           .attr("class", "pietext")
-          .text(function(d) {
-            // debugger
+          .text((d) => {
             return (d.data.label);
           });
 
@@ -218,7 +203,7 @@ class Draw {
   render(options = {}) {
     let xKey;
     let yKey;
-    // debugger
+
     if (options.x && options.y) {
       xKey = options.x;
       yKey = options.y;
@@ -264,12 +249,12 @@ class Draw {
       d.rank = +d.rank;
     });
 
-    var xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
+    const xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
     xRange = xExtent[1] - xExtent[0],
     yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
     yRange = yExtent[1] - yExtent[0];
 
-    var t = d3.transition()
+    const t = d3.transition()
       .duration(1000)
     // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
     //
@@ -371,7 +356,7 @@ class Draw {
     $('svg').find("circle").click((e) => {
       $(e.currentTarget).toggleClass("highlight-circle");
       // this.highlighted.push()
-      // debugger
+
     });
   }
 
@@ -398,7 +383,7 @@ class Draw {
     damage.push({"label": "Phys. Dmg", "value": d.stats.avgPhysicalDamage});
     damage.push({"label": "Magic Dmg", "value": d.stats.avgMagicDamage});
 
-    // debugger
+
     d3.select(".piesvg").remove();
     d3.select(".piesvg").remove();
     d3.select(".piesvg").remove();
@@ -423,7 +408,7 @@ class Draw {
     let xLocation;
     if ((window.innerWidth - 520) < d3.event.pageX) {
       xLocation = (d3.event.pageX - ($('.tooltip')[0].offsetWidth + 20));
-      // debugger
+
     } else {
       xLocation = (d3.event.pageX + 20);
     }
@@ -437,7 +422,7 @@ class Draw {
 
     let xKey;
     let yKey;
-    // debugger
+
     const margin = {top: 30, right: 20, bottom: 30, left: 65},
     width = 800 - margin.left - margin.right,
     height = 550 - margin.top - margin.bottom;
@@ -452,7 +437,7 @@ class Draw {
     const y = d3.scaleLinear().range([height, 0]);
 
 
-    var t = d3.transition()
+    const t = d3.transition()
       .duration(options.transition)
       // .ease(d3.easeLinear)
       // .duration(1000)
@@ -464,7 +449,7 @@ class Draw {
         d.rank = +d.rank;
       });
 
-      var xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
+      const xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
       xRange = xExtent[1] - xExtent[0],
       yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
       yRange = yExtent[1] - yExtent[0];
@@ -511,7 +496,7 @@ class Draw {
                 // .duration(500)
                 // .remove();
             });
-            // debugger
+
           circ.transition(t)
 
           // .delay((d, i) => i / this.list * 500)
