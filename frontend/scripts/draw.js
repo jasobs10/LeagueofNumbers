@@ -283,10 +283,12 @@ class Draw {
     // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
     x.domain([xExtent[0] - (xRange * .1), xExtent[1] + (xRange * .1)]);
     y.domain([yExtent[0] - (yRange * .1), yExtent[1] + (yRange * .1)]);
-
+    d3.selectAll('.axis-line').remove();
+    d3.select('#x-text').remove();
+    d3.select('#y-text').remove();
     svg.exit()
       .remove();
-
+    this.highlightClick();
     svg
         // .data(this.list)
       .enter().append('circle')
@@ -324,8 +326,11 @@ class Draw {
             // .duration(500)
             // .remove();
         });
+    this.highlightClick();
 
     const gLine = d3.select("#main-g");
+
+  d3.selectAll('.axis-line').remove();
 
     gLine.append("g")
         .attr("transform", "translate(0," + height + ")")
@@ -363,7 +368,7 @@ class Draw {
       .style("text-anchor", "middle")
       .text(`${labels[yKey]}`);
 
-      this.highlightClick();
+
 
   }
 
@@ -439,6 +444,7 @@ class Draw {
   }
 
   update(options) {
+
     let xKey;
     let yKey;
     // debugger
@@ -490,6 +496,25 @@ class Draw {
         .selectAll('circle')
         .data(this.list, (d) => d.stats[xKey]);
 
+        svg
+            .attr("cx", (d) => x(d.stats[xKey]))
+            .attr("cy", (d) => y(d.stats[yKey]))
+            .on("mouseover", (d) => {
+
+
+              this.handleHover(d, tooltip, xKey, yKey);
+
+            })
+            .on("mouseout", (d) => {
+              tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+                // d3.select(".piesvg").transition()
+                // .duration(500)
+                // .remove();
+            });
+
+
         const xAxis = d3.select("#axis-x");
         const yAxis = d3.select("#axis-y");
         const xText = d3.select("#x-text");
@@ -511,8 +536,6 @@ class Draw {
 
         yText
           .text(`${labels[yKey]}`);
-
-          this.highlightClick();
 
   }
 
