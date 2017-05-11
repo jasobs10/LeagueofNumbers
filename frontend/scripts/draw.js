@@ -182,12 +182,19 @@ class Draw {
       .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
+        var t = d3.transition()
+          .duration(100)
+
       var g = svg.selectAll(".arc")
           .data(pie(data))
         .enter().append("g")
+        // .transition(t)
           .attr("class", "arc");
 
+
+
       g.append("path")
+          .transition(t)
           .attr("d", arc)
           .style("fill", function(d) { return color(d.data.value); });
 
@@ -289,7 +296,7 @@ class Draw {
     svg.exit()
       .remove();
     this.highlightClick();
-    svg
+    const circ = svg
         // .data(this.list)
       .enter().append('circle')
         .attr("r", (d) => {
@@ -312,20 +319,37 @@ class Draw {
           return "circle";
         })
 
-        .on("mouseover", (d) => {
+        // .on("mouseover", (d) => {
+        //
+        //
+        //   this.handleHover(d, tooltip, xKey, yKey);
+        //
+        // })
+        // .on("mouseout", (d) => {
+        //   tooltip.transition()
+        //     .duration(500)
+        //     .style("opacity", 0);
+        //     // d3.select(".piesvg").transition()
+        //     // .duration(500)
+        //     // .remove();
+        // });
+        var t = d3.transition()
+      .duration(750)
+    circ.transition(t);
+    circ.on("mouseover", (d) => {
 
 
-          this.handleHover(d, tooltip, xKey, yKey)
+        this.handleHover(d, tooltip, xKey, yKey);
 
-        })
-        .on("mouseout", (d) => {
-          tooltip.transition()
-            .duration(500)
-            .style("opacity", 0);
-            // d3.select(".piesvg").transition()
-            // .duration(500)
-            // .remove();
-        });
+      })
+      .on("mouseout", (d) => {
+        tooltip.transition()
+          .duration(500)
+          .style("opacity", 0);
+          // d3.select(".piesvg").transition()
+          // .duration(500)
+          // .remove();
+      });
     this.highlightClick();
 
     const gLine = d3.select("#main-g");
@@ -493,12 +517,18 @@ class Draw {
           .attr("class", "tooltip-chart");
 
       const svg = d3.select("#main-g")
+        // .transition(t)
         .selectAll('circle')
-        .data(this.list, (d) => d.stats[xKey]);
+        .data(this.list, (d) => d.stats[xKey])
+        .transition(t)
 
-        svg
+        //transitions must be first?
+
+        const circ = svg
+            // .transition(t)
             .attr("cx", (d) => x(d.stats[xKey]))
             .attr("cy", (d) => y(d.stats[yKey]))
+
             .on("mouseover", (d) => {
 
 
@@ -513,6 +543,7 @@ class Draw {
                 // .duration(500)
                 // .remove();
             });
+          // circ.transition(t);
 
 
         const xAxis = d3.select("#axis-x");
