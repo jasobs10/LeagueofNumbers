@@ -1,8 +1,6 @@
 class SummonersController < ApplicationController
 
-  # debugger
   def index
-    # debugger
     if params[:name]
 
       name_url = params[:name].gsub(/\s+/, "")
@@ -19,12 +17,10 @@ class SummonersController < ApplicationController
       hash["rank"] = "N/A"
 
 
-      # debugx/ger
       render json: hash
     end
 
     if params[:random]
-      # debugger
       result = Net::HTTP.get(URI.parse("https://na1.api.riotgames.com/lol/league/v3/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=#{key}"))
       first = JSON.parse(result)["entries"].sample["playerOrTeamId"]
       name = JSON.parse(result)["entries"].sample["playerOrTeamName"]
@@ -35,18 +31,13 @@ class SummonersController < ApplicationController
       hash["name"] = name
       hash["sum_id"] = first
       hash["rank"] = "N/A"
-
       render json: hash
-
     end
   end
 
   def show
-
-
     result = Net::HTTP.get(URI.parse("https://na1.api.riotgames.com/lol/summoner/v3/summoners/#{params[:id]}?api_key=#{key}"))
     render json: result
-
   end
 
 end

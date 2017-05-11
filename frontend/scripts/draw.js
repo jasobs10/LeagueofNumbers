@@ -149,8 +149,6 @@ class Draw {
         break;
 
     }
-
-
     const color = d3.scaleOrdinal()
         .range(colors);
 
@@ -164,7 +162,7 @@ class Draw {
 
     const pie = d3.pie()
         .sort(null)
-        .value(function(d) { return d.value; });
+        .value((d) => d.value);
 
     const svg = d3.select(".tooltip-chart").append("svg")
         .attr("class", "piesvg")
@@ -180,25 +178,21 @@ class Draw {
 
       g.append("path")
           .attr("d", arc)
-          .style("fill", function(d) { return color(d.data.value); });
+          .style("fill", (d) => color(d.data.value));
 
       g.append("text")
-          .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+          .attr("transform", (d) => "translate(" + labelArc.centroid(d) + ")")
           .attr("dy", "0em")
           .attr("class", "pietext")
-          .text((d) => {
-            return (d.data.label);
-          });
+          .text((d) => (d.data.label));
 
       g.append("text")
-          .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+          .attr("transform", (d) => "translate(" + labelArc.centroid(d) + ")")
           .attr("dy", "1.2em")
           .attr("class", "pietext")
           .text((d) => `(${d.data.value})`);
 
   }
-
-
 
   render(options = {}) {
     let xKey;
@@ -215,7 +209,6 @@ class Draw {
     $(`#x-axis option[value=${xKey}]`).prop('selected', true);
     $(`#y-axis option[value=${yKey}]`).prop('selected', true);
 
-    // add a function to calculate the data i need.  For kda, do if xKey or yKey === kda, then change it
     const margin = {top: 30, right: 20, bottom: 30, left: 65},
     width = 800 - margin.left - margin.right,
     height = 550 - margin.top - margin.bottom;
@@ -224,11 +217,12 @@ class Draw {
     const y = d3.scaleLinear().range([height, 0]);
 
 
-      const svg = d3.select("#main-g")
-        .selectAll('circle')
-        .data(this.list);
+    const svg = d3.select("#main-g")
+      .selectAll('circle')
+      .data(this.list);
 
     d3.select(".tooltip").remove();
+
     const tooltip = d3.select(".chart-container").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
@@ -239,28 +233,22 @@ class Draw {
     tooltip.append("div")
         .attr("class", "tooltip-chart");
 
-
-
-
-    // use + to change to integer
     this.list.forEach((d) => {
       d.stats[xKey] = +d.stats[xKey];
       d.stats[yKey] = +d.stats[yKey];
       d.rank = +d.rank;
     });
 
-    const xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
+    const xExtent = d3.extent(this.list, (d) => d.stats[xKey]),
     xRange = xExtent[1] - xExtent[0],
-    yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
+    yExtent = d3.extent(this.list, (d) => d.stats[yKey]),
     yRange = yExtent[1] - yExtent[0];
 
     const t = d3.transition()
-      .duration(1000)
-    // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
-    //
-    // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
-    x.domain([xExtent[0] - (xRange * .1), xExtent[1] + (xRange * .1)]);
-    y.domain([yExtent[0] - (yRange * .1), yExtent[1] + (yRange * .1)]);
+      .duration(1000);
+
+    x.domain([xExtent[0] - (xRange * 0.1), xExtent[1] + (xRange * 0.1)]);
+    y.domain([yExtent[0] - (yRange * 0.1), yExtent[1] + (yRange * 0.1)]);
     d3.selectAll('.axis-line').remove();
     d3.select('#x-text').remove();
     d3.select('#y-text').remove();
@@ -268,30 +256,21 @@ class Draw {
       .remove();
     this.highlightClick();
     const circ = svg
-        // .data(this.list)
+
       .enter().append('circle')
       .on("mouseover", (d) => {
-
-
           this.handleHover(d, tooltip, xKey, yKey);
-
         })
         .on("mouseout", (d) => {
           tooltip.transition()
             .duration(500)
             .style("opacity", 0);
-            // d3.select(".piesvg").transition()
-            // .duration(500)
-            // .remove();
         })
         .transition(t)
         .ease(d3.easeExp)
         .attr("r", (d) => {
-
           if (!d.rank) {
-
             return 20;
-
           }
           return Math.sqrt(d.rank / 3);
         })
@@ -300,7 +279,6 @@ class Draw {
         .style("fill", (d) => d.color)
         .attr("class", (d) => {
           if (!d.rank) {
-
             return "player-circle";
           }
           return "circle";
@@ -310,18 +288,16 @@ class Draw {
 
     const gLine = d3.select("#main-g");
 
-  d3.selectAll('.axis-line').remove();
+    d3.selectAll('.axis-line').remove();
 
     gLine.append("g")
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axis-line")
         .attr("id", "axis-x")
         .call(d3.axisBottom(x)
-          // .tickFormat(d3.format(".0s")));
           .ticks(15, "s"));
     gLine.append("text")
       .attr("transform",
-        // "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
         "translate(357.5, 530)")
       .attr("id", "x-text")
       .attr("dx", "1em")
@@ -333,7 +309,6 @@ class Draw {
         .call(d3.axisLeft(y)
           .ticks(15, "s"))
 
-          // .tickFormat(d3.format(".0s")))
         .attr("class", "axis-line")
         .attr("id", "axis-y");
 
@@ -347,16 +322,11 @@ class Draw {
       .attr("class", "axis-label")
       .style("text-anchor", "middle")
       .text(`${labels[yKey]}`);
-
-
-
   }
 
   highlightClick() {
     $('svg').find("circle").click((e) => {
       $(e.currentTarget).toggleClass("highlight-circle");
-      // this.highlighted.push()
-
     });
   }
 
@@ -387,7 +357,6 @@ class Draw {
     d3.select(".piesvg").remove();
     d3.select(".piesvg").remove();
     d3.select(".piesvg").remove();
-    // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
 
     this.renderPie(playerData);
     this.renderPie(winData);
@@ -395,16 +364,11 @@ class Draw {
 
     tooltip.transition()
       .duration(200)
-      .style("opacity", .9)
+      .style("opacity", 0.9);
 
-      //call draw function for new thing
     tooltip.select(".tooltip-header")
-      .html(`<h3>Summoner: ${d.name}</h3>` + `<article>Rank: ${d.ranking}</article>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
-    // tooltip.html(`<h3>Summoner: ${d.name}</h3>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`)
-    // tooltip.exit().remove()
-    // tooltip.enter()
-        // .style("left", "45vw")
-        // .style("top", "10vh");
+      .html(`<h3>Summoner: ${d.name}</h3>` + `<article>Rank: ${d.ranking}</article>` + `<article>${labels[xKey]}: ${d.stats[xKey]}</article>` + `<article>${labels[yKey]}: ${d.stats[yKey]}</article>`);
+
     let xLocation;
     if ((window.innerWidth - 520) < d3.event.pageX) {
       xLocation = (d3.event.pageX - ($('.tooltip')[0].offsetWidth + 20));
@@ -438,10 +402,7 @@ class Draw {
 
 
     const t = d3.transition()
-      .duration(options.transition)
-      // .ease(d3.easeLinear)
-      // .duration(1000)
-      // .ease(d3.easeLinear)
+      .duration(options.transition);
 
       this.list.forEach((d) => {
         d.stats[xKey] = +d.stats[xKey];
@@ -449,16 +410,13 @@ class Draw {
         d.rank = +d.rank;
       });
 
-      const xExtent = d3.extent(this.list, function(d) { return d.stats[xKey]; }),
+      const xExtent = d3.extent(this.list, (d) => d.stats[xKey]),
       xRange = xExtent[1] - xExtent[0],
-      yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
+      yExtent = d3.extent(this.list, (d) => d.stats[yKey]),
       yRange = yExtent[1] - yExtent[0];
 
-      // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
-      //
-      // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
-      x.domain([xExtent[0] - (xRange * .1), xExtent[1] + (xRange * .1)]);
-      y.domain([yExtent[0] - (yRange * .1), yExtent[1] + (yRange * .1)]);
+      x.domain([xExtent[0] - (xRange * 0.1), xExtent[1] + (xRange * 0.1)]);
+      y.domain([yExtent[0] - (yRange * 0.1), yExtent[1] + (yRange * 0.1)]);
       d3.select(".tooltip").remove();
       const tooltip = d3.select(".chart-container").append("div")
           .attr("class", "tooltip")
@@ -471,38 +429,25 @@ class Draw {
           .attr("class", "tooltip-chart");
 
       const svg = d3.select("#main-g")
-        // .transition(t)
+
         .selectAll('circle')
-        .data(this.list, (d) => d.stats[xKey])
-        // .transition(t)
-
-        //transitions must be first?
-
-        const circ = svg
-            // .transition(t)
+        .data(this.list, (d) => d.stats[xKey]);
 
 
-            .on("mouseover", (d) => {
-
-
+      const circ = svg
+          .on("mouseover", (d) => {
               this.handleHover(d, tooltip, xKey, yKey);
-
             })
-            .on("mouseout", (d) => {
-              tooltip.transition()
-                .duration(500)
-                .style("opacity", 0);
-                // d3.select(".piesvg").transition()
-                // .duration(500)
-                // .remove();
-            });
+          .on("mouseout", (d) => {
+            tooltip.transition()
+              .duration(500)
+              .style("opacity", 0);
 
-          circ.transition(t)
+          });
 
-          // .delay((d, i) => i / this.list * 500)
-
+      circ.transition(t)
           .attr("cx", (d) => x(d.stats[xKey]))
-          .attr("cy", (d) => y(d.stats[yKey]))
+          .attr("cy", (d) => y(d.stats[yKey]));
 
 
 
@@ -513,11 +458,8 @@ class Draw {
 
         xAxis
         .transition(t)
-        // .ease(d3.easeElastic)
-        // .duration(100)
             .call(d3.axisBottom(x)
-              // .tickFormat(d3.format(".0s")));
-              .ticks(15, "s"))
+              .ticks(15, "s"));
 
         xText
           .transition(t)
@@ -525,21 +467,14 @@ class Draw {
 
         yAxis
           .transition(t)
-          // .ease(d3.easeElastic)
-          // .duration(750)
             .call(d3.axisLeft(y)
               .ticks(15, "s"));
-
-              // .tickFormat(d3.format(".0s")))
-
 
         yText
         .transition(t)
           .text(`${labels[yKey]}`);
 
   }
-
 }
-
 
 export default Draw;
