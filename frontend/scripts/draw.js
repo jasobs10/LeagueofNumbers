@@ -268,10 +268,6 @@ class Draw {
 
 
 
-    // tooltip.append("h1");
-    // tooltip.append("article");
-    // tooltip.append("article");
-
 
     // use + to change to integer
     this.list.forEach((d) => {
@@ -335,7 +331,7 @@ class Draw {
         // });
         var t = d3.transition()
       .duration(750)
-    circ.transition(t);
+    // circ.transition(t);
     circ.on("mouseover", (d) => {
 
 
@@ -520,14 +516,13 @@ class Draw {
         // .transition(t)
         .selectAll('circle')
         .data(this.list, (d) => d.stats[xKey])
-        .transition(t)
+        // .transition(t)
 
         //transitions must be first?
 
         const circ = svg
             // .transition(t)
-            .attr("cx", (d) => x(d.stats[xKey]))
-            .attr("cy", (d) => y(d.stats[yKey]))
+
 
             .on("mouseover", (d) => {
 
@@ -543,7 +538,11 @@ class Draw {
                 // .duration(500)
                 // .remove();
             });
-          // circ.transition(t);
+            // debugger
+          circ.transition(t)
+          .attr("cx", (d) => x(d.stats[xKey]))
+          .attr("cy", (d) => y(d.stats[yKey]))
+
 
 
         const xAxis = d3.select("#axis-x");
