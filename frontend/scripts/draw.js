@@ -174,7 +174,7 @@ class Draw {
     var pie = d3.pie()
         .sort(null)
         .value(function(d) { return d.value; });
-    // d3.select(".piesvg").remove();
+        
     var svg = d3.select(".tooltip-chart").append("svg")
         .attr("class", "piesvg")
         .attr("width", width)
@@ -182,19 +182,15 @@ class Draw {
       .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-        var t = d3.transition()
-          .duration(100)
-
       var g = svg.selectAll(".arc")
           .data(pie(data))
         .enter().append("g")
-        // .transition(t)
+
           .attr("class", "arc");
 
 
 
       g.append("path")
-          .transition(t)
           .attr("d", arc)
           .style("fill", function(d) { return color(d.data.value); });
 
@@ -281,6 +277,8 @@ class Draw {
     yExtent = d3.extent(this.list, function(d) { return d.stats[yKey]; }),
     yRange = yExtent[1] - yExtent[0];
 
+    var t = d3.transition()
+      .duration(750)
     // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
     //
     // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
@@ -295,6 +293,21 @@ class Draw {
     const circ = svg
         // .data(this.list)
       .enter().append('circle')
+      .on("mouseover", (d) => {
+
+
+          this.handleHover(d, tooltip, xKey, yKey);
+
+        })
+        .on("mouseout", (d) => {
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+            // d3.select(".piesvg").transition()
+            // .duration(500)
+            // .remove();
+        })
+        .transition(t)
         .attr("r", (d) => {
 
           if (!d.rank) {
@@ -313,39 +326,8 @@ class Draw {
             return "player-circle";
           }
           return "circle";
-        })
+        });
 
-        // .on("mouseover", (d) => {
-        //
-        //
-        //   this.handleHover(d, tooltip, xKey, yKey);
-        //
-        // })
-        // .on("mouseout", (d) => {
-        //   tooltip.transition()
-        //     .duration(500)
-        //     .style("opacity", 0);
-        //     // d3.select(".piesvg").transition()
-        //     // .duration(500)
-        //     // .remove();
-        // });
-        var t = d3.transition()
-      .duration(750)
-    // circ.transition(t);
-    circ.on("mouseover", (d) => {
-
-
-        this.handleHover(d, tooltip, xKey, yKey);
-
-      })
-      .on("mouseout", (d) => {
-        tooltip.transition()
-          .duration(500)
-          .style("opacity", 0);
-          // d3.select(".piesvg").transition()
-          // .duration(500)
-          // .remove();
-      });
     this.highlightClick();
 
     const gLine = d3.select("#main-g");
@@ -353,6 +335,7 @@ class Draw {
   d3.selectAll('.axis-line').remove();
 
     gLine.append("g")
+        .transition(t)
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axis-line")
         .attr("id", "axis-x")
@@ -360,6 +343,7 @@ class Draw {
           // .tickFormat(d3.format(".0s")));
           .ticks(15, "s"));
     gLine.append("text")
+        .transition(t)
       .attr("transform",
         // "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
         "translate(357.5, 530)")
@@ -370,6 +354,7 @@ class Draw {
       .text(`${labels[xKey]}`);
 
     gLine.append("g")
+        .transition(t)
         .call(d3.axisLeft(y)
           .ticks(15, "s"))
 
@@ -379,6 +364,7 @@ class Draw {
 
 
     gLine.append("text")
+        .transition(t)
       .attr("transform", "rotate(-90)")
       .attr("id", "y-text")
       .attr("y", 0 - margin.left)
@@ -483,7 +469,7 @@ class Draw {
 
 
     var t = d3.transition()
-      .duration(100)
+      .duration(800)
 
       this.list.forEach((d) => {
         d.stats[xKey] = +d.stats[xKey];
@@ -540,6 +526,9 @@ class Draw {
             });
             // debugger
           circ.transition(t)
+
+          // .delay((d, i) => i / this.list * 500)
+
           .attr("cx", (d) => x(d.stats[xKey]))
           .attr("cy", (d) => y(d.stats[yKey]))
 
@@ -551,13 +540,17 @@ class Draw {
         const yText = d3.select("#y-text");
 
         xAxis
+        .transition(t)
             .call(d3.axisBottom(x)
               // .tickFormat(d3.format(".0s")));
-              .ticks(15, "s"));
+              .ticks(15, "s"))
+
         xText
+          .transition(t)
           .text(`${labels[xKey]}`);
 
         yAxis
+          .transition(t)
             .call(d3.axisLeft(y)
               .ticks(15, "s"));
 
@@ -565,6 +558,7 @@ class Draw {
 
 
         yText
+        .transition(t)
           .text(`${labels[yKey]}`);
 
   }
