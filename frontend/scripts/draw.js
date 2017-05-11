@@ -99,33 +99,37 @@ class Draw {
     if (axis === "X") {
 
       loopAxis = $('#x-axis').children().slice(1);
+
       staticAxis = $('#y-axis').find(":selected").val();
-      // options.x = loopAxis;
       options.y = staticAxis;
       $('.x-button').html("STOP").addClass("stop");
     } else if (axis === "Y") {
 
       loopAxis = $('#y-axis').children().slice(1);
+
       staticAxis = $('#x-axis').find(":selected").val();
       options.x = staticAxis;
-      // options.y = loopAxis;
+
       $('.y-button').html("STOP").addClass("stop");
     }
     const loop = axis;
     const size = loopAxis.size();
     let i = 0;
     this.interval = setInterval(() => {
+      if (loopAxis[i].value !== "-- select data --") {
       if (loop === "X") {
         options.x = loopAxis[i % size].value;
       } else {
         options.y = loopAxis[i % size].value;
       }
 
+
       options.transition = 600;
 
       this.update(options);
-
+    }
       i++;
+
 
     }, 750);
   }
@@ -219,7 +223,7 @@ class Draw {
 
     const svg = d3.select("#main-g")
       .selectAll('circle')
-      .data(this.list);
+      .data(this.list)
 
     d3.select(".tooltip").remove();
 
@@ -431,7 +435,7 @@ class Draw {
       const svg = d3.select("#main-g")
 
         .selectAll('circle')
-        .data(this.list, (d) => d.stats[xKey]);
+        .data(this.list);
 
 
       const circ = svg
