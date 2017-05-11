@@ -61,9 +61,10 @@ class Draw {
 
     $('.dropdowns').submit((e) => {
       e.preventDefault();
+
       const xAx = $x.find(":selected").val();
       const yAx = $y.find(":selected").val();
-      const options = {"x": xAx, "y": yAx};
+      const options = {"x": xAx, "y": yAx, "transition": 800};
       this.update(options);
     });
 
@@ -128,18 +129,19 @@ class Draw {
 
         }
 
+        options.transition = 600;
+
         this.update(options);
       }
         i += 1;
       // } else {
       //   clearInterval(interval);
       // }
-    }, 250);
+    }, 750);
 
   }
 
   renderPie(data) {
-    // var data2 = [10, 20, 100];
 
     var width = 160,
         height = 160,
@@ -174,7 +176,7 @@ class Draw {
     var pie = d3.pie()
         .sort(null)
         .value(function(d) { return d.value; });
-        
+
     var svg = d3.select(".tooltip-chart").append("svg")
         .attr("class", "piesvg")
         .attr("width", width)
@@ -236,20 +238,10 @@ class Draw {
     const x = d3.scaleLinear().range([0, width]);
     const y = d3.scaleLinear().range([height, 0]);
 
-    // d3.select("svg").remove();
-
-
-    // const svg = d3.select(".chart-container").append("svg")
-    //     // .attr("width", width + margin.left + margin.right)
-    //     // .attr("height", height + margin.bottom + margin.top)
-    //     .attr("width", 800)
-    //     .attr("height", 580)
-    //   .append("g")
-    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       const svg = d3.select("#main-g")
         .selectAll('circle')
-        .data(this.list, (d) => d.stats[xKey]);
+        .data(this.list);
 
     d3.select(".tooltip").remove();
     const tooltip = d3.select(".chart-container").append("div")
@@ -278,7 +270,7 @@ class Draw {
     yRange = yExtent[1] - yExtent[0];
 
     var t = d3.transition()
-      .duration(750)
+      .duration(1000)
     // x.domain(d3.extent(this.list, (d) => d.stats[xKey]));
     //
     // y.domain([0, d3.max(this.list, (d) => d.stats[yKey])]);
@@ -308,6 +300,7 @@ class Draw {
             // .remove();
         })
         .transition(t)
+        .ease(d3.easeExp)
         .attr("r", (d) => {
 
           if (!d.rank) {
@@ -335,7 +328,6 @@ class Draw {
   d3.selectAll('.axis-line').remove();
 
     gLine.append("g")
-        .transition(t)
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axis-line")
         .attr("id", "axis-x")
@@ -343,7 +335,6 @@ class Draw {
           // .tickFormat(d3.format(".0s")));
           .ticks(15, "s"));
     gLine.append("text")
-        .transition(t)
       .attr("transform",
         // "translate(" + (width/2) + " ," + (height - margin.bottom + 60) + ")")
         "translate(357.5, 530)")
@@ -354,7 +345,6 @@ class Draw {
       .text(`${labels[xKey]}`);
 
     gLine.append("g")
-        .transition(t)
         .call(d3.axisLeft(y)
           .ticks(15, "s"))
 
@@ -364,7 +354,6 @@ class Draw {
 
 
     gLine.append("text")
-        .transition(t)
       .attr("transform", "rotate(-90)")
       .attr("id", "y-text")
       .attr("y", 0 - margin.left)
@@ -398,12 +387,7 @@ class Draw {
     const playerData = [];
     const winData = [];
     const damage = [];
-    // playerData.push({"name": d.name});
-    // playerData.push({"rank": d.rank});
-    // Object.keys(d.stats).forEach((key) => {
-    //   playerData.push({[key]: d.stats[key]});
-    //   // debugger
-    // });
+
     playerData.push({"label": "Avg Kills", "value": d.stats.avgKills});
     playerData.push({"label": "Avg Assists", "value": d.stats.avgAssists});
     playerData.push({"label": "Avg Deaths", "value": d.stats.avgDeaths});
@@ -469,7 +453,10 @@ class Draw {
 
 
     var t = d3.transition()
-      .duration(800)
+      .duration(options.transition)
+      // .ease(d3.easeLinear)
+      // .duration(1000)
+      // .ease(d3.easeLinear)
 
       this.list.forEach((d) => {
         d.stats[xKey] = +d.stats[xKey];
@@ -541,6 +528,8 @@ class Draw {
 
         xAxis
         .transition(t)
+        // .ease(d3.easeElastic)
+        // .duration(100)
             .call(d3.axisBottom(x)
               // .tickFormat(d3.format(".0s")));
               .ticks(15, "s"))
@@ -551,6 +540,8 @@ class Draw {
 
         yAxis
           .transition(t)
+          // .ease(d3.easeElastic)
+          // .duration(750)
             .call(d3.axisLeft(y)
               .ticks(15, "s"));
 
