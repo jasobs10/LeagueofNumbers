@@ -116,22 +116,21 @@ class Draw {
     const size = loopAxis.size();
     let i = 0;
     this.interval = setInterval(() => {
-      if (loopAxis[i].value !== "-- select data --") {
-      if (loop === "X") {
-        options.x = loopAxis[i % size].value;
-      } else {
-        options.y = loopAxis[i % size].value;
-      }
+      if (loopAxis[i % size].value !== "-- select data --") {
+        if (loop === "X") {
+          options.x = loopAxis[i % size].value;
+        } else {
+          options.y = loopAxis[i % size].value;
+        }
 
-
-      options.transition = 600;
-
-      this.update(options);
+        options.transition = 600;
+        this.update(options);
     }
       i++;
 
 
     }, 750);
+
   }
 
   renderPie(data) {
