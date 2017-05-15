@@ -2,7 +2,7 @@
 
 League of Numbers is a tool to visualize statistics of the top 200 players of the 2017 season, and user inputted players.
 
-[Live](http://leagueofnumbers.herokuapp.com/)
+[Live](http://leagueofnumbers.us/)
 
 
 ## Technologies & APIs
