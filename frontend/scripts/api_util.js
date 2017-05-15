@@ -34,7 +34,6 @@ export const APIUTIL = {
 
   fetchChallengers: () => {
     return $.getJSON('data/challengers.json', (data) => {
-      // console.log(data);
     });
   },
 
@@ -50,7 +49,6 @@ export const APIUTIL = {
 
   fetchChallengerMatchesJson: () => {
     return $.getJSON('data/matches4.json', (data) => {
-      // console.log(data);
     });
   }
 

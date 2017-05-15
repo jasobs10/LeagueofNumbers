@@ -9,14 +9,8 @@ $(() => {
   $('.question').mouseover(() => $('.tip-box').show());
   $('.question').mouseout(() => $('.tip-box').hide());
 
-  let a = new Data();
-  a.addPlayerInput();
-  a.fetchChallengers();
+  const chartData = new Data();
+  chartData.addPlayerInput();
+  chartData.fetchChallengers();
 
-
-
-  // debugger;
-
-  // debugger
-//
 });
