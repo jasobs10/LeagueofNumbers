@@ -71,10 +71,14 @@ class Draw {
 
   handleClick(e) {
     if (e.target.innerText === "STOP") {
-
       e.currentTarget.classList.remove("stop");
       e.currentTarget.innerText = (e.target.className === "submit x-button") ? "X" : "Y";
       clearInterval(this.interval);
+      if (e.target.classList[1] === 'x-button') {
+        $('.y-button').click(this.handleClick.bind(this));
+      } else {
+        $('.x-button').click(this.handleClick.bind(this));
+      }
     } else {
       this.autoAxis(e.target.innerText);
     }
@@ -118,8 +122,10 @@ class Draw {
     this.interval = setInterval(() => {
       if (loopAxis[i % size].value !== "-- select data --") {
         if (loop === "X") {
+          $('.y-button').off();
           options.x = loopAxis[i % size].value;
         } else {
+          $('.x-button').off();
           options.y = loopAxis[i % size].value;
         }
 
