@@ -11,9 +11,8 @@ class Data {
   fetchChallengers(xArg, yArg) {
 
       APIUTIL.fetchChallengerMatchesJson().then((r) => {
-        // console.log(r.length)
-        this.challengerList = r;
 
+        this.challengerList = r;
         this.draw.list = this.challengerList;
         this.draw.setAttributes();
         this.draw.addOptions();
@@ -29,7 +28,6 @@ class Data {
       e.preventDefault();
       $('#cssload-loader').show();
       const name = $(e.target).find("input").val();
-      // debugger
       APIUTIL.fetchSummonerByName(name).then((r) => {
         $('#cssload-loader').hide();
         this.draw.renderPlayer(r);
@@ -42,10 +40,10 @@ class Data {
     });
 
     $('#random').click(() => {
-      // debugger
       $('#cssload-loader').show();
       APIUTIL.fetchRandom().then((r) => {
         $('#cssload-loader').hide();
+        $('#player-text').val(`${r.name}`);
         this.draw.renderPlayer(r);
         this.draw.hideError();
       }, (e) => {
