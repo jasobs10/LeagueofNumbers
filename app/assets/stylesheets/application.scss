@@ -88,7 +88,7 @@ button,
   width: 100%;
   text-align: center;
   margin: 2%;
-  font-size: 43px;
+  font-size: 48px;
   font-family: 'Rasa', serif;
   font-weight: 800;
   letter-spacing: 1px;
@@ -96,9 +96,14 @@ button,
 
  }
 
+ .sub-header {
+   margin-top: 0;
+   font-size: 25px;
+ }
+
  .line {
    color: white;
-   width: 900px;
+   width: 800px;
    margin-bottom: 2%;
 
  }
