@@ -227,7 +227,7 @@ class Draw {
 
     const svg = d3.select("#main-g")
       .selectAll('circle')
-      .data(this.list)
+      .data(this.list);
 
     d3.select(".tooltip").remove();
 
@@ -293,6 +293,17 @@ class Draw {
         });
 
     this.highlightClick();
+    d3.select("#main-g")
+      .selectAll('circle')
+      .data(this.list)
+        .on("mouseover", (d) => {
+          this.handleHover(d, tooltip, xKey, yKey);
+        })
+        .on("mouseout", (d) => {
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+        });
 
     const gLine = d3.select("#main-g");
 
