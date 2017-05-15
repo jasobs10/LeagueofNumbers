@@ -22,8 +22,9 @@ class SummonersController < ApplicationController
 
     if params[:random]
       result = Net::HTTP.get(URI.parse("https://na1.api.riotgames.com/lol/league/v3/masterleagues/by-queue/RANKED_SOLO_5x5?api_key=#{key}"))
-      first = JSON.parse(result)["entries"].sample["playerOrTeamId"]
-      name = JSON.parse(result)["entries"].sample["playerOrTeamName"]
+      random = JSON.parse(result)["entries"].sample
+      first = random["playerOrTeamId"]
+      name = random["playerOrTeamName"]
       stats = Net::HTTP.get(URI.parse("https://na.api.riotgames.com/api/lol/NA/v1.3/stats/by-summoner/#{first}/ranked?season=SEASON2017&api_key=#{key}"))
       matches2 = JSON.parse(stats).entries
       hash = {}

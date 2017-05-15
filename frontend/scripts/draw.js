@@ -293,6 +293,7 @@ class Draw {
         });
 
     this.highlightClick();
+    
     d3.select("#main-g")
       .selectAll('circle')
       .data(this.list)
