@@ -5,7 +5,6 @@ export const APIUTIL = {
   fetchSummonerById: (id) => {
     return $.ajax({
       method: "GET",
-      // url: `https://na1.api.riotgames.com/lol/summoner/v3/summoners/${id}?api_key=${key}`,
       url: `summoners/${id}`,
       dataType: 'json',
       data: {}
