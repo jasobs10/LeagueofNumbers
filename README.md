@@ -8,6 +8,7 @@ League of Numbers is a tool to visualize statistics of the top 200 players of th
 ## Technologies & APIs
 * JavaScript
 * D3.js
+* jQuery
 * Riot Games API
 * Ruby
 * Ruby on Rails
