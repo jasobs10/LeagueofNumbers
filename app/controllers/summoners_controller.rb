@@ -2,7 +2,7 @@ class SummonersController < ApplicationController
 
   def index
     if params[:name]
-
+      debugger
       name_url = params[:name].gsub(/\s+/, "")
       summoner = Net::HTTP.get(URI.parse("https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/#{name_url}?api_key=#{key}"))
       summoner2 = JSON.parse(summoner)
