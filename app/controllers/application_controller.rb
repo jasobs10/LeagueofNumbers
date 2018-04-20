@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   helper_method :key
 
   def key
-    "RGAPI-28a9f378-6242-43bb-b322-989c1585566f"
+    "RGAPI-a1ee4c59-a850-44e6-9729-35549b1536d5"
   end
 end
